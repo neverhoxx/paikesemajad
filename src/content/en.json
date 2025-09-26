@@ -1,0 +1,16 @@
+{
+    "Header": {
+        "languages": {
+            "en": "English",
+            "ee": "Estonian"
+        },
+        "headerNav": {
+            "katalog": "House plans",
+            "referentsid": "References",
+            "ehitusinfo": "Prefab technology",
+            "meist": "About us",
+            "blogi": "Blog",
+            "kontakt": "Contact"
+        }
+    }
+}

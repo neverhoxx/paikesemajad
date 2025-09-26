@@ -1,0 +1,16 @@
+{
+    "Header": {
+        "languages": {
+            "en": "Inglise",
+            "ee": "Eesti"
+        },
+        "headerNav": {
+            "katalog": "Projektide kataloog",
+            "referentsid": "Referentsid",
+            "ehitusinfo": "Ehitusinfo",
+            "meist": "Meist",
+            "blogi": "Blogi",
+            "kontakt": "Kontakt"
+        }
+    }
+}

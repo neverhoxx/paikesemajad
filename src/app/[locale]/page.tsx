@@ -1,0 +1,35 @@
+import { Container } from "@/components/shared/container";
+
+import { FaArrowDown } from "react-icons/fa6";
+
+import Link from "next/link";
+
+import HeroImage from "@/images/main-hero-bg.png";
+
+export default function Home() {
+    return (
+        <div
+            className='hero bg-center'
+            style={{
+                backgroundImage: `linear-gradient(90deg, rgba(173, 252, 249, 1) 0%, rgba(25,25,25,0) 88%, rgba(16,16,16,0) 100%), url(${HeroImage.src})`,
+            }}
+        >
+            <Container className="hero flex flex-col justify-center pt-[90px]">
+                <div className="max-w-[500px]">
+                    <h1 className="text-5xl font-bold mb-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h1>
+                    <p className="text-[16px] opacity-80 mb-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, neque placeat corporis sit eos dicta est et nemo possimus saepe, voluptatem quaerat architecto cum aut nostrum necessitatibus officia. Quisquam, aperiam?
+                    </p>
+
+                    <Link href="" className="flex gap-2 items-center select-none">
+                        Uuri lisaks <FaArrowDown />
+                    </Link>
+                </div>
+
+            </Container>
+
+        </div>
+    );
+}
