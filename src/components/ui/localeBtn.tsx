@@ -20,11 +20,19 @@ export default function LocaleSwitch() {
     const toggleLocale = () => {
         const nextLocale = currentLocale === "ee" ? "en" : "ee";
 
-        const pathWithoutLocale = pathname.replace(/^\/(en|ee)/, "") || "/";
+        const segments = pathname.split("/").filter(Boolean);
+
+        if (segments[0] === "en" || segments[0] === "ee") {
+            segments.shift();
+        }
+
+        const newPath = `/${nextLocale}/${segments.join("/")}`;
+
+        router.push(newPath === `/${nextLocale}/` ? `/${nextLocale}` : newPath);
 
         document.cookie = `locale=${nextLocale}; path=/; max-age=31536000`;
-        router.push(`/${nextLocale}${pathWithoutLocale}`);
     };
+
 
     return (
         <button
