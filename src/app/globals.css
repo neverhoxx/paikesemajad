@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import 'swiper/css';
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -87,4 +89,8 @@
 
 .hero{
   min-height: calc(100vh - 100px);
+}
+
+.main-first-block{
+  background-image: url("../images/main-first-block-bg.jpg");
 }

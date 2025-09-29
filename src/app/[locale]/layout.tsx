@@ -2,6 +2,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Header from "@/components/shared/header";
 
+import Footer from "@/components/shared/footer";
+
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -18,6 +20,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                 <NextIntlClientProvider locale={locale}>
                     <Header />
                     {children}
+                    <Footer />
                 </NextIntlClientProvider>
             </body>
         </html>

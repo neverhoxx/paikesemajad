@@ -7,22 +7,22 @@ import { useEffect, useState } from "react";
 export default function LocaleSwitch() {
     const router = useRouter();
     const pathname = usePathname() || "/";
-    const [currentLocale, setCurrentLocale] = useState<"en" | "ee">("ee");
+    const [currentLocale, setCurrentLocale] = useState<"en" | "et">("et");
 
     useEffect(() => {
         if (pathname.startsWith("/en")) {
             setCurrentLocale("en");
         } else {
-            setCurrentLocale("ee");
+            setCurrentLocale("et");
         }
     }, [pathname]);
 
     const toggleLocale = () => {
-        const nextLocale = currentLocale === "ee" ? "en" : "ee";
+        const nextLocale = currentLocale === "et" ? "en" : "et";
 
         const segments = pathname.split("/").filter(Boolean);
 
-        if (segments[0] === "en" || segments[0] === "ee") {
+        if (segments[0] === "en" || segments[0] === "et") {
             segments.shift();
         }
 
@@ -37,9 +37,9 @@ export default function LocaleSwitch() {
     return (
         <button
             onClick={toggleLocale}
-            className="border rounded-full px-3 py-1 text-blue-600 font-bold cursor-pointer"
+            className="border-2 rounded-full px-3 py-1 text-white font-bold cursor-pointer"
         >
-            {currentLocale === "ee" ? "EN" : "EST"}
+            {currentLocale === "et" ? "EN" : "EST"}
         </button>
     );
 }

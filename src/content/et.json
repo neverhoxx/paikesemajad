@@ -12,5 +12,19 @@
             "blogi": "Blogi",
             "kontakt": "Kontakt"
         }
+    },
+    "Stats": {
+        "years": "AASTAT KOGEMUST",
+        "complete": "TOIMETATUD MOODULMAJU",
+        "workers": "PROFESSIONAALSET TÖÖTAJAT"
+    },
+    "Main-main": {
+        "choose": "Vali oma unistuste kodu",
+        "choose-text": "Kodu ehitamine ei ole kindlasti kerge otsus. Miks peaksidki leppima vähemaga, kui perfektsus? Meiega ei peagi. Kui Sa ei leia tehtud projektide alt endale sobivat lahendust, siis tutvu ka disaininurgaga, kus oleme välja toonud maailmast silma jäänud ilusamad majad. Leia endale see õige ja meie aitame selle valmis ehitada.",
+        "Buttons": {
+            "projects": "Meie projektid",
+            "complete-works": "Tehtud tööd",
+            "kusi-pakkumist": "Küsi pakkumist"
+        }
     }
 }

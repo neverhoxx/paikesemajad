@@ -12,5 +12,19 @@
             "blogi": "Blog",
             "kontakt": "Contact"
         }
+    },
+    "Stats": {
+        "years": "YEARS EXPERIENCE",
+        "complete": "MODULAR HOUSES DELIVERED",
+        "workers": "PROFESSIONAL EMPLOYEES"
+    },
+    "Main-main": {
+        "choose": "Choose your dream home",
+        "choose-text": "Building a home is definitely not an easy decision. Why should you settle for anything less than perfection? Not with us. If you can't find a solution that suits you among the completed projects, check out the design corner, where we have highlighted the most beautiful houses that have stood out from the world. Find the right one for you and we will help you build it.",
+        "Buttons": {
+            "projects": "Our projects",
+            "complete-works": "Completed works",
+            "kusi-pakkumist": "Request a quote"
+        }
     }
 }
