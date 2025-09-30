@@ -5,42 +5,36 @@ import HeroImage from "@/images/main-hero-bg.png";
 
 export default function Kataloog() {
     return (
-        <div className='py-[75px]'>
+        <section className="py-[75px] bg-[#f8fafc]">
             <Container>
                 <h2 className="text-4xl text-blue-700 font-extrabold mb-8">
                     Uuemad projektid kataloogis
                 </h2>
 
-                <div className="flex justify-between items-center flex-wrap gap-5">
-                    <div className="w-[600px] bg-[#f5f5f5] rounded-2xl p-5 select-none">
-                        <Image className="max-w-[560px] h-auto" src={HeroImage} alt={""}></Image>
-                        <h3 className="text-2xl font-bold mb-3">TITLE</h3>
-
-                        <p>NETOPIND 137.5 M2</p>
-                    </div>
-
-                    <div className="w-[600px] bg-[#f5f5f5] rounded-2xl p-5 select-none">
-                        <Image className="max-w-[560px] h-auto" src={HeroImage} alt={""}></Image>
-                        <h3 className="text-2xl font-bold mb-3">TITLE</h3>
-
-                        <p>NETOPIND 137.5 M2</p>
-                    </div>
-
-                    <div className="w-[600px] bg-[#f5f5f5] rounded-2xl p-5 select-none">
-                        <Image className="max-w-[560px] h-auto" src={HeroImage} alt={""}></Image>
-                        <h3 className="text-2xl font-bold mb-3">TITLE</h3>
-
-                        <p>NETOPIND 137.5 M2</p>
-                    </div>
-
-                    <div className="w-[600px] bg-[#f5f5f5] rounded-2xl p-5 select-none">
-                        <Image className="max-w-[560px] h-auto" src={HeroImage} alt={""}></Image>
-                        <h3 className="text-2xl font-bold mb-3">TITLE</h3>
-
-                        <p>NETOPIND 137.5 M2</p>
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+                    {[1, 2, 3, 4].map((item) => (
+                        <div
+                            key={item}
+                            className="bg-white rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl duration-300"
+                        >
+                            <div className="relative w-full h-60">
+                                <Image
+                                    src={HeroImage}
+                                    alt="Projekt"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="p-6">
+                                <h3 className="text-xl font-bold text-gray-800 mb-2">
+                                    Projekt {item}
+                                </h3>
+                                <p className="text-gray-600">NETOPIND 137.5 m²</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </Container>
-        </div>
+        </section>
     );
 }

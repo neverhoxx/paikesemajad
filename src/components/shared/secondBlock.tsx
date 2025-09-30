@@ -9,7 +9,7 @@ export default function PlanningBlock() {
             <Container>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center min-h-[80vh]">
                     <div>
-                        <h2 className="text-3xl md:text-5xl font-bold text-[#0014C7] mb-6 leading-snug">
+                        <h2 className="text-4xl text-blue-700 font-extrabold mb-8">
                             Kuidas alustada oma kodu planeerimisega?
                         </h2>
                         <p className="text-lg text-gray-700 mb-4">
