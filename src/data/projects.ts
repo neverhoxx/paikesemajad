@@ -40,13 +40,13 @@ import fourhProduct9 from "@/images/fourhProject-9.jpg";
 import fourhProduct10 from "@/images/fourhProject-10.jpg";
 import fourhProduct11 from "@/images/fourhProject-11.jpg";
 
-
+import { StaticImageData } from "next/image";
 
 interface BaseProduct {
     id: number;
     name: string;
     text: string;
-    main_image: any;
+    main_image: StaticImageData;
     charasteristic: Characteristics;
 }
 
@@ -73,12 +73,12 @@ interface Characteristics {
 
 
 interface ProductWithImage extends BaseProduct {
-    image: any;
-    images?: never;
+    image?: never;
+    images?: StaticImageData[];
 }
 
 interface ProductWithImages extends BaseProduct {
-    images: any[];
+    images: StaticImageData[];
     image?: never;
 }
 

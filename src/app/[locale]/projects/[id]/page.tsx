@@ -283,8 +283,10 @@ export default function ProductDetails({ params }: Props) {
                 index={index}
                 close={() => setIndex(-1)}
                 slides={[
-                    { src: product.main_image.src || product.main_image },
-                    ...product_images.map(img => ({ src: img.src || img })),
+                    { src: typeof product.main_image === "string" ? product.main_image : product.main_image.src },
+                    ...product_images.map(img => ({
+                        src: typeof img === "string" ? img : img.src
+                    })),
                 ]}
             />
         </>
