@@ -94,3 +94,11 @@
 .main-first-block{
   background-image: url("../images/main-first-block-bg.jpg");
 }
+
+.project-details-hero{
+  min-height: 80vh;
+
+  height: 100%;
+}
+
+

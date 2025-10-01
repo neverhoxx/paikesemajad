@@ -23,10 +23,10 @@ export default function PremiumContactForm() {
     };
 
     return (
-        <div className="">
-            <div className="grid grid-cols-1 lg:grid-cols-2 bg-white/95  shadow-2xl overflow-hidden">
+        <div className="bg-gradient-to-b from-[#304FFE] to-[#0d47a1] bg-white/95 shadow-2xl">
+            <Container className="grid grid-cols-1 lg:grid-cols-2  overflow-hidden">
 
-                <div className="flex flex-col justify-center items-start p-10 bg-gradient-to-b from-[#304FFE] to-[#0d47a1] text-white">
+                <div className="flex flex-col justify-center items-start p-10  text-white">
                     <h2 className="text-4xl lg:text-5xl font-extrabold mb-6 drop-shadow-lg">
                         Kirjuta meile otse
                     </h2>
@@ -34,10 +34,10 @@ export default function PremiumContactForm() {
                         Võta ühendust ja arutame võimalusi täpselt Sinu vajaduste järgi.
                     </p>
                 </div>
-                <div className="flex items-center justify-center py-5">
+                <div className="flex items-center justify-center py-5 bg-white rounded-2xl">
                     <form
                         onSubmit={handleSubmit}
-                        className="w-full max-w-lg space-y-6"
+                        className="w-full max-w-lg space-y-6 "
                     >
                         <div className="flex justify-between">
                             <div>
@@ -145,7 +145,7 @@ export default function PremiumContactForm() {
                         </button>
                     </form>
                 </div>
-            </div>
+            </Container>
         </div>
     );
 }

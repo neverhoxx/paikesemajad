@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa6";
 
 import Link from "next/link";
 
-import HeroImage from "@/images/main-hero-bg.png";
+import HeroImage from "@/images/hero-bg.jpg";
 
 export default function HeroMain() {
     return (
@@ -12,7 +12,7 @@ export default function HeroMain() {
             className='hero bg-center bg-no-repeat'
             style={{
                 backgroundImage: `
-    linear-gradient(90deg, rgba(48, 79, 254, 1) 0%, rgba(25, 25, 25, 0) 88%, rgba(16, 16, 16, 0) 100%),
+    linear-gradient(90deg, rgba(48, 79, 254, 0.6) 0%, rgba(25, 25, 25, 0) 88%, rgba(16, 16, 16, 0) 100%),
     linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
     url(${HeroImage.src})
   `,
