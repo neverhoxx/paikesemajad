@@ -15,12 +15,12 @@ import { MdOutlineSquareFoot } from "react-icons/md";
 interface Props {
     params: Promise<{ id: string }>;
 }
-/*style={{ backgroundImage: `url(${img.src})` }}*/
+
 export default function ProductDetails({ params }: Props) {
     const { id } = use(params);
 
     const t = useTranslations('Projects');
-    const products: Product[] = getProducts();
+    const products: Product[] = getProducts(t);
     const product = products.find(p => String(p.id) === id);
     const product_images = product?.images || [];
 

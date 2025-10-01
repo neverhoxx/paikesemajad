@@ -49,6 +49,15 @@
         "first-project": {
             "name": "Suvemaja pööninguga 35 m²",
             "text": "See modernne pööninguga suvemaja ei jäta kedagi ükskõikseks ning pakub omanikele avaruse ja hubasuse tunnet. Projektis ette nähtud põrandast laeni aknad tagavad suure hulga loomuliku valguse."
+        },
+        "living": "Elutuba",
+        "second-project": {
+            "name": "Elamu 72 m²",
+            "text": "Üks meie elamutest – lihtne, kuid siiski esteetiliselt atraktiivne ja modernne. Hele skandinaavia stiil koos suurepärase planeeringuga: 2 eraldiseisvat magamistuba, pööningukorrus, täielikult varustatud vannituba ja avar elutuba."
+        },
+        "third-project": {
+            "name": "Elamu 120 m²",
+            "text": "Väga kaunis elamu, kus on 3 magamistuba, tööruum, avar elutuba, mis on ühendatud köögiga, ning täielikult varustatud vannituba. Projekt on eriti atraktiivne, kuna planeering on praktiline ja maja sobib hästi peredele lastega!"
         }
     },
     "Navigations": {

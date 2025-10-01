@@ -1,7 +1,6 @@
 import { Container } from "./container";
 
 import { getProducts } from "@/data/projects";
-import type { Product } from "@/data/projects";
 
 import { useTranslations } from "next-intl";
 
@@ -9,11 +8,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { useLocale } from 'next-intl';
-import HeroImage from "@/images/main-hero-bg.png";
 
 export default function Kataloog() {
-    const products: Product[] = getProducts();
-    const t = useTranslations("Main-main");
+    const t = useTranslations("Projects");
+    const products = getProducts(t);
 
     const nav_t = useTranslations("Navigations");
 
@@ -32,7 +30,7 @@ export default function Kataloog() {
                 <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
                     {products.map((project) => (
                         <Link
-                            href={`/${currentLocale}/${nav_t("projects")}/${project.id}`}
+                            href={`/${currentLocale}/${nav_t("projectss")}/${project.id}`}
                             key={project.id}
                             className="bg-white rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl duration-300"
                         >

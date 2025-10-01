@@ -1,6 +1,6 @@
 "use client";
 
-import { use } from "react"; // 👈 новый хук
+import { use } from "react";
 import { Container } from '@/components/shared/container';
 import Image from 'next/image';
 import { getProducts } from '@/data/projects';
@@ -12,15 +12,17 @@ import "yet-another-react-lightbox/styles.css";
 
 import { MdOutlineSquareFoot } from "react-icons/md";
 
+import Link from "next/link";
+
 interface Props {
     params: Promise<{ id: string }>;
 }
-/*style={{ backgroundImage: `url(${img.src})` }}*/
+
 export default function ProductDetails({ params }: Props) {
     const { id } = use(params);
 
     const t = useTranslations('Projects');
-    const products: Product[] = getProducts();
+    const products: Product[] = getProducts(t);
     const product = products.find(p => String(p.id) === id);
     const product_images = product?.images || [];
 
@@ -45,7 +47,7 @@ export default function ProductDetails({ params }: Props) {
                             onClick={() => setIndex(0)}
                         />
 
-                        <div className="flex gap-2 mt-4">
+                        <div className="flex gap-2 mt-4 flex-wrap justify-between">
                             {product_images.map((img, idx) => (
                                 <div
                                     key={idx}
@@ -85,6 +87,20 @@ export default function ProductDetails({ params }: Props) {
                                         </p>
                                         <p className="font-semibold">
                                             {product.charasteristic.area}
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li className="flex items-center w-1/2 mt-5">
+                                    <div className="p-2 border flex justify-center items-center mr-3">
+                                        <MdOutlineSquareFoot className="text-5xl text-blue-600" />
+                                    </div>
+                                    <div className="">
+                                        <p className="text-[#414145] text-[14px]">
+                                            {t("living")}
+                                        </p>
+                                        <p className="font-semibold">
+                                            {product.charasteristic.living}
                                         </p>
                                     </div>
                                 </li>
@@ -133,6 +149,119 @@ export default function ProductDetails({ params }: Props) {
                                     </div>
 
                                 </li>
+
+                                <li className="flex items-center w-1/2 mt-5">
+                                    <div className="p-2 border flex justify-center items-center mr-3 h-[65.6px] w-[65.6px]">
+                                        Icon
+                                    </div>
+                                    <div className="">
+                                        <p className="text-[#414145] text-[14px]">
+                                            {t("loft")}
+                                        </p>
+                                        <p className="font-semibold">
+                                            {product.charasteristic.loft}
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li className="flex items-center w-1/2 mt-5">
+                                    <div className="p-2 border flex justify-center items-center mr-3 h-[65.6px] w-[65.6px]">
+                                        Icon
+                                    </div>
+                                    <div className="">
+                                        <p className="text-[#414145] text-[14px]">
+                                            {t("documentation")}
+                                        </p>
+                                        <p className="font-semibold">
+                                            {product.charasteristic.documentation}
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li className="flex items-center w-1/2 mt-5">
+                                    <div className="p-2 border flex justify-center items-center mr-3 h-[65.6px] w-[65.6px]">
+                                        Icon
+                                    </div>
+                                    <div className="">
+                                        <p className="text-[#414145] text-[14px]">
+                                            {t("bathroom")}
+                                        </p>
+                                        <p className="font-semibold">
+                                            {product.charasteristic.bathroom}
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li className="flex items-center w-1/2 mt-5">
+                                    <div className="p-2 border flex justify-center items-center mr-3 h-[65.6px] w-[65.6px]">
+                                        Icon
+                                    </div>
+                                    <div className="">
+                                        <p className="text-[#414145] text-[14px]">
+                                            {t("electricity")}
+                                        </p>
+                                        <p className="font-semibold">
+                                            {product.charasteristic.electricity}
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li className="flex items-center w-1/2 mt-5">
+                                    <div className="p-2 border flex justify-center items-center mr-3 h-[65.6px] w-[65.6px]">
+                                        Icon
+                                    </div>
+                                    <div className="">
+                                        <p className="text-[#414145] text-[14px]">
+                                            {t("structure")}
+                                        </p>
+                                        <p className="font-semibold">
+                                            {product.charasteristic.structure}
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li className="flex items-center w-1/2 mt-5">
+                                    <div className="p-2 border flex justify-center items-center mr-3 h-[65.6px] w-[65.6px]">
+                                        Icon
+                                    </div>
+                                    <div className="">
+                                        <p className="text-[#414145] text-[14px]">
+                                            {t("construction")}
+                                        </p>
+                                        <p className="font-semibold">
+                                            {product.charasteristic.construction}
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li className="flex items-center w-1/2 mt-5">
+                                    <div className="p-2 border flex justify-center items-center mr-3 h-[65.6px] w-[65.6px]">
+                                        Icon
+                                    </div>
+                                    <div className="">
+                                        <p className="text-[#414145] text-[14px]">
+                                            {t("warranty")}
+                                        </p>
+                                        <p className="font-semibold">
+                                            {product.charasteristic.warranty}
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li className="flex items-center w-1/2 mt-5">
+                                    <div className="p-2 border flex justify-center items-center mr-3 h-[65.6px] w-[65.6px]">
+                                        Icon
+                                    </div>
+                                    <div className="">
+                                        <p className="text-[#414145] text-[14px]">
+                                            {t("plan")}
+                                        </p>
+                                        <p className="font-semibold">
+                                            <Link className="text-blue-500" href="">{product.charasteristic.plan.name}</Link>
+                                        </p>
+                                    </div>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
