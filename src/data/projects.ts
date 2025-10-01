@@ -46,7 +46,8 @@ interface BaseProduct {
     id: number;
     name: string;
     text: string;
-    main_image: StaticImageData;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    main_image: any;
     charasteristic: Characteristics;
 }
 
@@ -73,12 +74,14 @@ interface Characteristics {
 
 
 interface ProductWithImage extends BaseProduct {
-    image?: never;
-    images?: StaticImageData[];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    image: any;
+    images?: never;
 }
 
 interface ProductWithImages extends BaseProduct {
-    images: StaticImageData[];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    images: any[];
     image?: never;
 }
 
