@@ -58,6 +58,10 @@
         "third-project": {
             "name": "Elamu 120 m²",
             "text": "Väga kaunis elamu, kus on 3 magamistuba, tööruum, avar elutuba, mis on ühendatud köögiga, ning täielikult varustatud vannituba. Projekt on eriti atraktiivne, kuna planeering on praktiline ja maja sobib hästi peredele lastega!"
+        },
+        "fourth-project": {
+            "name": "Elamu 76 m²",
+            "text": "See modernne ja funktsionaalne 76 m² elamu on ideaalne valik 3–4-liikmelisele perele. 3 magamistuba tagavad mugavuse ja privaatsuse kõigile pereliikmetele. Modernne stuudioelutuba, mis on ühendatud köögiga, sobib ideaalselt ühisteks lõõgastumishetkedeks. Suured aknad annavad majale mitte ainult stiilse välimuse, vaid toovad ka rohkelt päevavalgust, muutes ruumi visuaalselt avaramaks ja heledamaks. See on suurepärane valik neile, kes otsivad modernset, kompaktset ja funktsionaalset kodu."
         }
     },
     "Navigations": {
