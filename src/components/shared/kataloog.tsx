@@ -27,10 +27,9 @@ export default function Kataloog() {
                     Projektid kataloogis
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {products.map((project) => (
-                        <Link
-                            href={`/${currentLocale}/${nav_t("projectss")}/${project.id}`}
+                        <div
                             key={project.id}
                             className="bg-white rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl duration-300"
                         >
@@ -42,13 +41,24 @@ export default function Kataloog() {
                                     className="object-cover"
                                 />
                             </div>
-                            <div className="p-6">
-                                <h3 className="text-xl font-bold text-gray-800 mb-2">
-                                    {project.name}
-                                </h3>
-                                <p className="text-gray-600">NETOPIND: {project.charasteristic.area}</p>
+                            <div className="p-6 flex justify-between flex-wrap gap-2">
+                                <div className="">
+                                    <h3 className="text-xl font-bold text-gray-800 mb-2">
+                                        {project.name}
+                                    </h3>
+                                    <p className="text-gray-600 select-none">{project.charasteristic.area} • {project.charasteristic.rooms_amount} {t('rooms-amount')}
+                                        {project?.charasteristic?.bathroom === "Included" && (
+                                            <> • {t("bathroom-inc")}</>
+                                        )}
+                                    </p>
+                                </div>
+                                <div className="flex items-center select-none">
+                                    <Link className="px-5 py-2 text-white bg-blue-700 rounded-2xl" href={`/${currentLocale}/${nav_t("projectss")}/${project.id}`}>
+                                        {t("view")}
+                                    </Link>
+                                </div>
                             </div>
-                        </Link>
+                        </div>
                     ))}
                 </div>
             </Container>

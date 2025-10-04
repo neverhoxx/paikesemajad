@@ -36,6 +36,7 @@
         "living": "Living area",
         "documentation": "Technical documentation",
         "bathroom": "Bathroom",
+        "bathroom-inc": "bathroom",
         "electricity": "Electricity installation",
         "structure": "Supporting structure",
         "construction": "Panel construction",
@@ -47,6 +48,7 @@
         "drawings": "View drawings",
         "metal-frame": "Metal frame (CE)",
         "wooden-panels": "Wooden panels (C24)",
+        "view": "View model",
         "first-project": {
             "name": "Summer house with a loft 35 m²",
             "text": "This modern summer house with a loft will not leave anyone indifferent, in addition it will give the owners of the house a feeling of spaciousness and comfort. Floor-to-ceiling windows provided in the project ensure the large amount of natural light coming through them."

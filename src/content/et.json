@@ -35,6 +35,7 @@
         "loft": "Pööning",
         "documentation": "Tehniline dokumentatsioon",
         "bathroom": "Vannituba",
+        "bathroom-inc": "vannituba",
         "electricity": "Elektripaigaldis",
         "structure": "Kandev konstruktsioon",
         "construction": "Paneelkonstruktsioon",
@@ -46,6 +47,7 @@
         "drawings": "Vaata jooniseid",
         "metal-frame": "Metallraam (CE)",
         "wooden-panels": "Puitpaneelid (C24)",
+        "view": "Vaata mudelit",
         "first-project": {
             "name": "Suvemaja pööninguga 35 m²",
             "text": "See modernne pööninguga suvemaja ei jäta kedagi ükskõikseks ning pakub omanikele avaruse ja hubasuse tunnet. Projektis ette nähtud põrandast laeni aknad tagavad suure hulga loomuliku valguse."
