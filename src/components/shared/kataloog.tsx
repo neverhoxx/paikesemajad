@@ -3,11 +3,11 @@ import { Container } from "./container";
 import { getProducts } from "@/data/projects";
 
 import { useTranslations } from "next-intl";
+import { useLocale } from 'next-intl';
 
 import Link from "next/link";
 import Image from "next/image";
 
-import { useLocale } from 'next-intl';
 
 export default function Kataloog() {
     const t = useTranslations("Projects");
@@ -24,7 +24,7 @@ export default function Kataloog() {
         <section className="py-[75px] bg-[#f8fafc]">
             <Container>
                 <h2 className="text-4xl text-blue-700 font-extrabold mb-8">
-                    Projektid kataloogis
+                    {t("katalogis")}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -38,7 +38,7 @@ export default function Kataloog() {
                                     src={project.main_image}
                                     alt={project.name}
                                     fill
-                                    className="object-cover"
+                                    className="object-cover select-none"
                                 />
                             </div>
                             <div className="p-6 flex justify-between flex-wrap gap-2">
@@ -60,6 +60,12 @@ export default function Kataloog() {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                <div className="text-center mt-5">
+                    <Link className="opacity-70 select-none" href="">
+                        Näita rohkem
+                    </Link>
                 </div>
             </Container>
         </section>

@@ -9,7 +9,6 @@
             "referentsid": "References",
             "ehitusinfo": "Prefab technology",
             "meist": "About us",
-            "blogi": "Blog",
             "kontakt": "Contact"
         }
     },
@@ -49,6 +48,7 @@
         "metal-frame": "Metal frame (CE)",
         "wooden-panels": "Wooden panels (C24)",
         "view": "View model",
+        "katalogis": "Projects in the catalog",
         "first-project": {
             "name": "Summer house with a loft 35 m²",
             "text": "This modern summer house with a loft will not leave anyone indifferent, in addition it will give the owners of the house a feeling of spaciousness and comfort. Floor-to-ceiling windows provided in the project ensure the large amount of natural light coming through them."
@@ -66,8 +66,17 @@
             "text": "This modern and functional 76 m2 house is the ideal choice for a family of 3-4 people. The 3 bedrooms will provide comfort and privacy for all family members. The modern studio living room, combined with the kitchen, will be perfect for relaxing moments together. The large windows not only give it a stylish look, but also bring abundant daylight into the room, making it visually more spacious and brighter. This will be a great choice for those looking for a modern, compact and functional place to call home."
         }
     },
+    "Contact": {
+        "title": "Get in touch",
+        "text": "Get in touch and we will discuss options tailored to your needs.",
+        "btn": "Get in touch"
+    },
     "Navigations": {
-        "projectss": "projects"
+        "projectss": "projects",
+        "contact": "contact",
+        "referentsid": "references",
+        "ehitusinfo": "prefab-technology",
+        "meist": "about-us"
     },
     "Project-details": {}
 }

@@ -1,9 +1,20 @@
+'use client';
+
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../shared/container";
 import planImg from "@/images/main-hero-bg.png";
 
+import { useTranslations } from "next-intl";
+import { useLocale } from 'next-intl';
+
 export default function PlanningBlock() {
+    const nav_t = useTranslations("Navigations");
+
+    const locale = useLocale();
+
+    const availableLocales = ['et', 'en'];
+    const currentLocale = availableLocales.includes(locale) ? locale : 'et';
     return (
         <section className="bg-[#f2f7fb] py-16 md:py-24">
             <Container>
@@ -27,14 +38,14 @@ export default function PlanningBlock() {
 
                         <div className="flex flex-col sm:flex-row items-center gap-6">
                             <Link
-                                href="/form"
+                                href={`/${currentLocale}/${nav_t("contact")}`}
                                 className="px-8 py-3 text-[#0014C7] font-bold border-2 border-[#0014C7] rounded-lg shadow-sm hover:bg-[#0014C7] hover:text-white transition duration-300"
                             >
                                 ALUSTA OMA PROJEKTIGA
                             </Link>
 
                             <Link
-                                href="/kataloog"
+                                href={`/${currentLocale}/${nav_t("projectss")}`}
                                 className="text-[#0014C7] font-semibold underline underline-offset-4 hover:text-black transition"
                             >
                                 Vali meie kataloogist

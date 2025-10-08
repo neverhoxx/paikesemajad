@@ -18,6 +18,7 @@ import { Menu, X } from "lucide-react";
 
 export default function Header() {
     const t = useTranslations("Header");
+    const nav_t = useTranslations("Navigations");
     const pathname = usePathname() || "/";
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
@@ -73,16 +74,47 @@ export default function Header() {
 
                 <nav className="hidden md:flex gap-10">
                     <ul className="flex items-center gap-6">
-                        {Object.entries(headerNav).map(([key, label]) => (
-                            <li key={key}>
-                                <Link
-                                    href={`/${lang}${pathWithoutLocale}#${key}`}
-                                    className="hover:opacity-75"
-                                >
-                                    {label}
-                                </Link>
-                            </li>
-                        ))}
+
+                        <li>
+                            <Link
+                                href={`/${currentLocale}/${nav_t("projectss")}`}
+                                className="hover:opacity-75"
+                            >
+                                {t("headerNav.katalog")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href={`/${currentLocale}/${nav_t("referentsid")}`}
+                                className="hover:opacity-75"
+                            >
+                                {t("headerNav.referentsid")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href={`/${currentLocale}/${nav_t("ehitusinfo")}`}
+                                className="hover:opacity-75"
+                            >
+                                {t("headerNav.ehitusinfo")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href={`/${currentLocale}/${nav_t("meist")}`}
+                                className="hover:opacity-75"
+                            >
+                                {t("headerNav.meist")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href={`/${currentLocale}/${nav_t("contact")}`}
+                                className="hover:opacity-75"
+                            >
+                                {t("headerNav.kontakt")}
+                            </Link>
+                        </li>
                     </ul>
                     <LocaleSwitch />
                 </nav>

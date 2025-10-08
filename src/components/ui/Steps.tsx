@@ -1,6 +1,8 @@
+'use client';
 import { Container } from "../shared/container";
 
 import { useTranslations } from "next-intl";
+import { useLocale } from 'next-intl';
 
 import bgImg from "@/images/main-first-block-bg.jpg";
 
@@ -8,8 +10,15 @@ import Link from "next/link";
 
 export default function MainFirstBlock() {
     const t = useTranslations("Main-main");
-
+    const nav_t = useTranslations("Navigations");
     const tBtn = useTranslations("Main-main.Buttons");
+
+    const locale = useLocale();
+
+    const availableLocales = ['et', 'en'];
+    const currentLocale = availableLocales.includes(locale) ? locale : 'et';
+
+
 
     return (
         <div
@@ -27,11 +36,11 @@ export default function MainFirstBlock() {
                 </p>
 
                 <div className="flex flex-wrap gap-5 mt-5 select-none md:justify-normal justify-center">
-                    <Link className="px-10 py-3 text-white border-3 border-[#C5FFFD] rounded-2xl hover:text-black hover:bg-[#C5FFFD] duration-500" href="">
+                    <Link className="px-10 py-3 text-white border-3 border-[#C5FFFD] rounded-2xl hover:text-black hover:bg-[#C5FFFD] duration-500" href={`/${currentLocale}/${nav_t("projectss")}`}>
                         {tBtn("projects")}
                     </Link>
 
-                    <Link className="px-10 py-3 border-3 text-white border-[#C5FFFD] rounded-2xl hover:text-black hover:bg-[#C5FFFD] duration-500" href="">
+                    <Link className="px-10 py-3 border-3 text-white border-[#C5FFFD] rounded-2xl hover:text-black hover:bg-[#C5FFFD] duration-500" href={`/${currentLocale}/${nav_t("referentsid")}`}>
                         {tBtn("complete-works")}
                     </Link>
                 </div>
