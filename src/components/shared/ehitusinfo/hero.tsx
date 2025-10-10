@@ -33,7 +33,6 @@ export default function EhitusinfoMain() {
                         Uuri lisaks <FaArrowDown />
                     </Link>
                 </div>
-
             </Container>
         </div>
     );

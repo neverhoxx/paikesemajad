@@ -23,7 +23,7 @@ export default function Kataloog() {
     return (
         <section className="py-[75px] bg-[#f8fafc]">
             <Container>
-                <h2 className="text-4xl text-blue-700 font-extrabold mb-8">
+                <h2 className="text-3xl md:text-4xl text-blue-700 font-extrabold mb-8">
                     {t("katalogis")}
                 </h2>
 
