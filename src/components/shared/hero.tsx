@@ -9,7 +9,7 @@ import HeroImage from "@/images/hero-bg.jpg";
 export default function HeroMain() {
     return (
         <div
-            className='hero bg-center bg-no-repeat'
+            className='hero bg-center bg-cover bg-no-repeat'
             style={{
                 backgroundImage: `
     linear-gradient(90deg, rgba(48, 79, 254, 0.6) 0%, rgba(25, 25, 25, 0) 88%, rgba(16, 16, 16, 0) 100%),
