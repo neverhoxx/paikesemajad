@@ -21,8 +21,8 @@ export default function PremiumContactForm() {
     const contactPath = currentLocale === "et" ? "kontakt" : "contact";
     return (
         <div className="shadow-2xl py-10">
-            <Container className="flex">
-                <div className="w-1/2">
+            <Container className="flex flex-wrap">
+                <div className="md:w-1/2 w-full mt-5 md:mt-0">
                     <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 drop-shadow-lg text-blue-600">
                         {t("title")}
                     </h2>
@@ -34,7 +34,7 @@ export default function PremiumContactForm() {
                         {t("btn")}
                     </Link>
                 </div>
-                <div className="w-1/2">
+                <div className="md:w-1/2 w-full mt-5 md:mt-0">
                     <div className="bg-[#f3f2f2] shadow-2xl rounded-2xl p-10">
                         <p className="font-bold mb-5 text-2xl">
                             Contact information

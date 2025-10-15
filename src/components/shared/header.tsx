@@ -4,8 +4,6 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import LocaleSwitch from "../ui/localeBtn";
-
-
 import { Container } from "./container";
 import Image from "next/image";
 
@@ -23,9 +21,9 @@ export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const pathWithoutLocale = pathname.replace(/^\/(en|et)/, "") || "/";
     const lang: "et" | "en" = pathname.startsWith("/en") ? "en" : "et";
-    const headerNav = lang === "en" ? en.Header.headerNav : et.Header.headerNav;
+    const [currentLocale, setCurrentLocale] = useState<"en" | "et">(lang);
+    const router = useRouter();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -34,9 +32,6 @@ export default function Header() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
-    const router = useRouter();
-    const [currentLocale, setCurrentLocale] = useState<"en" | "et">("et");
 
     useEffect(() => {
         if (pathname.startsWith("/en")) {
@@ -48,7 +43,6 @@ export default function Header() {
 
     const toggleLocale = () => {
         const nextLocale = currentLocale === "et" ? "en" : "et";
-
         const segments = pathname.split("/").filter(Boolean);
 
         if (segments[0] === "en" || segments[0] === "et") {
@@ -56,15 +50,22 @@ export default function Header() {
         }
 
         const newPath = `/${nextLocale}/${segments.join("/")}`;
-
         router.push(newPath === `/${nextLocale}/` ? `/${nextLocale}` : newPath);
 
         document.cookie = `locale=${nextLocale}; path=/; max-age=31536000`;
     };
 
+    const navLinks = [
+        { key: "katalog", path: nav_t("projectss"), label: t("headerNav.katalog") },
+        { key: "referentsid", path: nav_t("referentsid"), label: t("headerNav.referentsid") },
+        { key: "ehitusinfo", path: nav_t("ehitusinfo"), label: t("headerNav.ehitusinfo") },
+        { key: "meist", path: nav_t("meist"), label: t("headerNav.meist") },
+        { key: "kontakt", path: nav_t("contact"), label: t("headerNav.kontakt") },
+    ];
+
     return (
         <header
-            className={`fixed top-0 z-50 w-full transition-colors duration-300 text-[#fff] ${isScrolled ? "bg-[#000000da] shadow-md " : "bg-[#00000038]"
+            className={`fixed top-0 z-50 w-full transition-colors duration-300 text-[#fff] ${isScrolled ? "bg-[#000000da] shadow-md" : "bg-[#00000038]"
                 }`}
         >
             <Container className="flex items-center justify-between h-[85px]">
@@ -72,53 +73,22 @@ export default function Header() {
                     <Image src={logo} alt="Solantra" className="h-auto w-[160px]" />
                 </Link>
 
+                {/* Desktop navigation */}
                 <nav className="hidden md:flex gap-10">
                     <ul className="flex items-center gap-6">
-
-                        <li>
-                            <Link
-                                href={`/${currentLocale}/${nav_t("projectss")}`}
-                                className="hover:opacity-75"
-                            >
-                                {t("headerNav.katalog")}
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href={`/${currentLocale}/${nav_t("referentsid")}`}
-                                className="hover:opacity-75"
-                            >
-                                {t("headerNav.referentsid")}
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href={`/${currentLocale}/${nav_t("ehitusinfo")}`}
-                                className="hover:opacity-75"
-                            >
-                                {t("headerNav.ehitusinfo")}
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href={`/${currentLocale}/${nav_t("meist")}`}
-                                className="hover:opacity-75"
-                            >
-                                {t("headerNav.meist")}
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href={`/${currentLocale}/${nav_t("contact")}`}
-                                className="hover:opacity-75"
-                            >
-                                {t("headerNav.kontakt")}
-                            </Link>
-                        </li>
+                        {navLinks.map((link) => (
+                            <li key={link.key}>
+                                <Link
+                                    href={`/${currentLocale}/${link.path}`}
+                                    className="hover:opacity-75"
+                                >
+                                    {link.label}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                     <LocaleSwitch />
                 </nav>
-
                 <button
                     className="md:hidden p-2"
                     onClick={() => setMenuOpen((prev) => !prev)}
@@ -130,19 +100,23 @@ export default function Header() {
             {menuOpen && (
                 <div className="md:hidden absolute top-[85px] left-0 w-full bg-white shadow-lg">
                     <nav className="flex flex-col items-center gap-6 py-6 text-gray-900 font-medium">
-                        {Object.entries(headerNav).map(([key, label]) => (
+                        {navLinks.map((link) => (
                             <Link
-                                key={key}
-                                href={`/${lang}${pathWithoutLocale}#${key}`}
+                                key={link.key}
+                                href={`/${currentLocale}/${link.path}`}
                                 className="hover:text-blue-600 transition-colors"
                                 onClick={() => setMenuOpen(false)}
                             >
-                                {label}
+                                {link.label}
                             </Link>
                         ))}
+
                         <button
-                            onClick={toggleLocale}
-                            className={`border-2 rounded-full px-3 py-1 transition-colors duration-300 font-bold cursor-pointer ${isScrolled ? "!border-black !text-black" : "border-white text-white"}`}
+                            onClick={() => {
+                                toggleLocale();
+                                setMenuOpen(false);
+                            }}
+                            className="border-2 border-black rounded-full px-3 py-1 transition-colors duration-300 font-bold cursor-pointer text-black"
                         >
                             {currentLocale === "et" ? "EN" : "EST"}
                         </button>
