@@ -64,6 +64,18 @@
         "fourth-project": {
             "name": "Residential house 76 m²",
             "text": "This modern and functional 76 m2 house is the ideal choice for a family of 3-4 people. The 3 bedrooms will provide comfort and privacy for all family members. The modern studio living room, combined with the kitchen, will be perfect for relaxing moments together. The large windows not only give it a stylish look, but also bring abundant daylight into the room, making it visually more spacious and brighter. This will be a great choice for those looking for a modern, compact and functional place to call home."
+        },
+        "fifth-project": {
+            "name": "Snow House 138 m²",
+            "text": "The Snow House is a compact, light-filled two-story home that combines smart space planning, a cozy atmosphere, and flexible options."
+        },
+        "sixth-project": {
+            "name": "Gerda House 184-241 m²",
+            "text": "Gerda's house is suitable for families who value practical space layout and want a spacious and bright home."
+        },
+        "seventh-project": {
+            "name": "Miia House 115 m²",
+            "text": "Miia is a cozy two-story house with a Nordic design that fits perfectly in both the city and the middle of nature."
         }
     },
     "Contact": {

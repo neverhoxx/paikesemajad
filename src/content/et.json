@@ -64,6 +64,18 @@
         "fourth-project": {
             "name": "Elamu 76 m²",
             "text": "See modernne ja funktsionaalne 76 m² elamu on ideaalne valik 3–4-liikmelisele perele. 3 magamistuba tagavad mugavuse ja privaatsuse kõigile pereliikmetele. Modernne stuudioelutuba, mis on ühendatud köögiga, sobib ideaalselt ühisteks lõõgastumishetkedeks. Suured aknad annavad majale mitte ainult stiilse välimuse, vaid toovad ka rohkelt päevavalgust, muutes ruumi visuaalselt avaramaks ja heledamaks. See on suurepärane valik neile, kes otsivad modernset, kompaktset ja funktsionaalset kodu."
+        },
+        "fifth-project": {
+            "name": "Lumi maja 138 m²",
+            "text": "Lumi maja kompaktne, valgusküllane kahekorruseline kodu, mis ühendab nutika ruumiplaneeringu, hubase atmosfääri ja paindlikud võimalused."
+        },
+        "sixth-project": {
+            "name": "Gerda Maja 184-241 m²",
+            "text": "Gerda maja on sobib peredele, kes hindavad praktilist ruumipaigutust ning soovivad avarat ja valgusküllast kodu."
+        },
+        "seventh-project": {
+            "name": "Miia Maja 115 m²",
+            "text": "Miia on põhjamaise disainiga, õdus kahekordne maja, mis sobib ideaalselt nii linna kui ka looduse keskele."
         }
     },
     "Contact": {

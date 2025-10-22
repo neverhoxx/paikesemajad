@@ -40,6 +40,20 @@ import fourhProduct9 from "@/images/fourhProject-9.jpg";
 import fourhProduct10 from "@/images/fourhProject-10.jpg";
 import fourhProduct11 from "@/images/fourhProject-11.jpg";
 
+import fifthProduct1 from "@/images/lumimaja.webp";
+import fifthProduct2 from "@/images/lumimaja2.webp";
+import fifthProduct3 from "@/images/lumimaja3.webp";
+import fifthProduct4 from "@/images/lumimaja4.webp";
+
+import sixthProduct1 from "@/images/gerda1.webp";
+import sixthProduct2 from "@/images/gerda2.webp";
+import sixthProduct3 from "@/images/gerda3.webp";
+
+import seventhProduct1 from "@/images/miia1.webp";
+import seventhProduct2 from "@/images/miia2.webp";
+import seventhProduct3 from "@/images/miia3.webp";
+import seventhProduct4 from "@/images/miia4.webp";
+
 import { StaticImageData } from "next/image";
 
 interface BaseProduct {
@@ -244,6 +258,107 @@ export function getProducts(t: (key: string) => string): Product[] {
                 fourhProduct9,
                 fourhProduct10,
                 fourhProduct11
+            ]
+
+        },
+
+        {
+            id: 5,
+            name: t("fifth-project.name"),
+            text: t("fifth-project.text"),
+            main_image: fifthProduct1,
+
+            charasteristic: {
+                area: "138 m²",
+                living: "Not info",
+                dimensions: "Not info",
+                height: "3.95 m",
+                rooms_amount: "5",
+                loft: "Not info",
+                documentation: t("included"),
+                bathroom: t("included"),
+                electricity: t("included"),
+                structure: t("metal-frame"),
+                construction: t("wooden-panels"),
+                warranty: "5 " + t("years"),
+                plan: {
+                    name: t("drawings"),
+                    url: "https://voltamp.ee/docs/tigo_tap_paigaldus.pdf"
+                }
+            },
+
+            images: [
+                fifthProduct1,
+                fifthProduct2,
+                fifthProduct3,
+                fifthProduct4
+            ]
+
+        },
+
+        {
+            id: 6,
+            name: t("sixth-project.name"),
+            text: t("sixth-project.text"),
+            main_image: sixthProduct1,
+
+            charasteristic: {
+                area: "184-241 m²",
+                living: "Not info",
+                dimensions: "Not info",
+                height: "3.95 m",
+                rooms_amount: "5",
+                loft: "Not info",
+                documentation: t("included"),
+                bathroom: t("included"),
+                electricity: t("included"),
+                structure: t("metal-frame"),
+                construction: t("wooden-panels"),
+                warranty: "5 " + t("years"),
+                plan: {
+                    name: t("drawings"),
+                    url: "https://voltamp.ee/docs/tigo_tap_paigaldus.pdf"
+                }
+            },
+
+            images: [
+                sixthProduct1,
+                sixthProduct2,
+                sixthProduct3
+            ]
+
+        },
+
+        {
+            id: 7,
+            name: t("sixth-project.name"),
+            text: t("sixth-project.text"),
+            main_image: seventhProduct1,
+
+            charasteristic: {
+                area: "115 m²",
+                living: "Not info",
+                dimensions: "Not info",
+                height: "3.95 m",
+                rooms_amount: "4",
+                loft: "Not info",
+                documentation: t("included"),
+                bathroom: t("included"),
+                electricity: t("included"),
+                structure: t("metal-frame"),
+                construction: t("wooden-panels"),
+                warranty: "5 " + t("years"),
+                plan: {
+                    name: t("drawings"),
+                    url: "https://voltamp.ee/docs/tigo_tap_paigaldus.pdf"
+                }
+            },
+
+            images: [
+                seventhProduct1,
+                seventhProduct2,
+                seventhProduct3,
+                seventhProduct4
             ]
 
         }
