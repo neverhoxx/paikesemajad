@@ -11,8 +11,6 @@ import { MdEmail } from "react-icons/md";
 export default function PremiumContactForm() {
     const t = useTranslations("Contact");
 
-    const nav_t = useTranslations("Navigations");
-
     const locale = useLocale();
 
     const availableLocales = ['et', 'en'];

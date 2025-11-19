@@ -54,9 +54,6 @@ import seventhProduct2 from "@/images/miia2.webp";
 import seventhProduct3 from "@/images/miia3.webp";
 import seventhProduct4 from "@/images/miia4.webp";
 
-import { StaticImageData } from "next/image";
-
-
 export interface CharacteristicsExtended {
     facade: string;
     interior_options: string[];

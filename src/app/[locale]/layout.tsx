@@ -1,5 +1,4 @@
 import { NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
 import Header from "@/components/shared/header";
 
 import Footer from "@/components/shared/footer";

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Container } from "../container";
 
 import { useTranslations } from "next-intl";
-import { useLocale } from 'next-intl';
 
 export default function EhitusinfoFirstBlock() {
     const t = useTranslations("Ehitusinfo");

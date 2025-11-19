@@ -7,7 +7,6 @@ import Link from "next/link";
 import HeroImage from "@/images/hero-bg.jpg";
 
 import { useTranslations } from "next-intl";
-import { useLocale } from 'next-intl';
 
 export default function HeroMain() {
     const t = useTranslations("Main-main");

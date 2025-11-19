@@ -1,8 +1,3 @@
-import EhitusinfoMain from "@/components/shared/ehitusinfo/hero";
-import EhitusinfoFirstBlock from "@/components/shared/ehitusinfo/firstBlock";
-import EhitusinfoSecondBlock from "@/components/shared/ehitusinfo/secondBlock";
-import Kataloog from "@/components/shared/kataloog";
-
 export default function MeistPage() {
     return (
         <div className="pt-[185px]">

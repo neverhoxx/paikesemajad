@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -14,7 +13,7 @@ import {
     SheetTitle,
 } from "@/components/ui/sheet";
 
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect } from "react";
 
 export default function ContactForm() {

@@ -7,9 +7,6 @@ import LocaleSwitch from "../ui/localeBtn";
 import { Container } from "./container";
 import Image from "next/image";
 
-import et from "@/content/et.json";
-import en from "@/content/en.json";
-
 import logo from "@/images/solantra-logo.png";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";

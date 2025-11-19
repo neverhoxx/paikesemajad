@@ -10,7 +10,6 @@ import Image from "next/image";
 import testimg from "@/images/firstProject-main.jpg"
 
 import { useTranslations } from "next-intl";
-import { useLocale } from 'next-intl';
 
 export default function EhitusinfoSecondBlock() {
 
