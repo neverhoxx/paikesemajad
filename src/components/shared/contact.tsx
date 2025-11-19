@@ -42,7 +42,7 @@ export default function PremiumContactForm() {
 
                         <ul className="flex flex-col gap-3">
                             <li className="flex gap-2 items-center text-[18px]">
-                                <FaPhoneAlt className="text-blue-600" /> +372 123 4567
+                                <FaPhoneAlt className="text-blue-600" /> +372 523 5932
                             </li>
                             <li className="flex gap-2 items-center text-[18px]">
                                 <MdEmail className="text-blue-600 text-[20px]" /> info@paikesemajad.ee
