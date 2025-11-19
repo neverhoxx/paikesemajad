@@ -20,7 +20,7 @@ export default function EhitusinfoSecondBlock() {
             <Container className="flex flex-wrap gap-2 justify-between">
                 <div className="lg:w-1/2 w-full">
                     <h2 className="text-3xl lg:text-4xl text-blue-700 font-extrabold mb-10">
-                        Sisseehitatud päikesepaneelid: projekteerimine, paigaldamine, optimeerimine
+                        Integreeritud päikesepaneelid: projekteerimine, paigaldamine, optimeerimine
                     </h2>
 
                     <ul className="flex flex-col gap-5">
