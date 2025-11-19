@@ -9,7 +9,13 @@ import Image from "next/image";
 
 import testimg from "@/images/firstProject-main.jpg"
 
+import { useTranslations } from "next-intl";
+import { useLocale } from 'next-intl';
+
 export default function EhitusinfoSecondBlock() {
+
+    const t = useTranslations("Ehitusinfo");
+
     return (
         <div className='py-10'>
             <Container className="flex flex-wrap gap-2 justify-between">
@@ -40,8 +46,8 @@ export default function EhitusinfoSecondBlock() {
                         <li className="flex items-center text-xl gap-5">
                             <FaBatteryFull className="text-4xl text-blue-600" />
                             <div className="opacity-90">
-                                <h3 className="font-bold opacity-100">Valikuline aku salvestamine</h3>
-                                Salvesta üleliigne energia öiseks kasutamiseks
+                                <h3 className="font-bold opacity-100">Erinevad akulahendused</h3>
+                                Muuda oma kodu veelgi efektiivsemaks lisades akud
                             </div>
 
                         </li>

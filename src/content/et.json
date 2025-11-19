@@ -24,6 +24,11 @@
             "projects": "Meie projektid",
             "complete-works": "Tehtud tööd",
             "kusi-pakkumist": "Küsi pakkumist"
+        },
+        "Hero": {
+            "title": "Avasta Solantra SolarHome",
+            "text": "Lõplik lahendus, mis muudab sinu kodu stiilseks ja tõhusaks energiatootjaks. Säästa arvetelt, teeni BIPV-toetuste abil ning tõsta oma kinnisvara väärtust — kõik elegantse ja sujuva disainiga. Toida oma tulevikku, teenides samal ajal ja aidates planeeti.",
+            "uuri": "Uuri lisaks"
         }
     },
     "Projects": {
@@ -90,5 +95,17 @@
         "ehitusinfo": "ehitusinfo",
         "meist": "meist"
     },
-    "Project-details": {}
+    "Project-details": {},
+    "Ehitusinfo": {
+        "title": "Ehitusinfo",
+        "text": "Siit leiad täpsustava informatsiooni kuidas me jõuame teie ideest lõpplahenduseni.",
+        "uuri": "Uuri lisaks",
+        "second-title": "Kuidas eelvalmistatud tehnoloogia töötab?",
+        "first-step-title": "Disain ja inseneriteadus",
+        "second-step-title": "Tehase ehitus",
+        "third-step-title": "Kohapealne kokkupanek",
+        "first-step-text": "Custom layouts engineered for transport and site assembly.",
+        "second-step-text": "Kontrollitud keskkonnas tootmine: täpsus, kvaliteet, kiirus.",
+        "third-step-text": "Kiire kohapealne kokkupanek ja professionaalne päikesesüsteemi aktiveerimine."
+    }
 }

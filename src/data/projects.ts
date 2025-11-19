@@ -56,6 +56,19 @@ import seventhProduct4 from "@/images/miia4.webp";
 
 import { StaticImageData } from "next/image";
 
+
+export interface CharacteristicsExtended {
+    facade: string;
+    interior_options: string[];
+    flooring_options: string[];
+    insulation: string[];
+    electricity_installation: string;
+    bathroom: string;
+    doors_and_windows: string;
+    adjustability: string;
+    additional_options: string[];
+}
+
 interface BaseProduct {
     id: number;
     name: string;
@@ -63,6 +76,8 @@ interface BaseProduct {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     main_image: any;
     charasteristic: Characteristics;
+
+    techSpecs: CharacteristicsExtended;
 }
 
 
@@ -86,7 +101,6 @@ interface Characteristics {
 }
 
 
-
 interface ProductWithImage extends BaseProduct {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     image: any;
@@ -100,6 +114,44 @@ interface ProductWithImages extends BaseProduct {
 }
 
 export type Product = ProductWithImage | ProductWithImages;
+
+const defaultTechSpecs: CharacteristicsExtended = {
+    facade: "Wood panels (painted 2x)",
+
+    interior_options: [
+        "Wood panels, painted white",
+        "Plasterboard, painted white"
+    ],
+
+    flooring_options: [
+        "Parquet",
+        "Laminate (Class 32nd)"
+    ],
+
+    insulation: [
+        "150 mm wool insulation in exterior walls",
+        "200 mm wool insulation in floor",
+        "250 mm wool insulation in roof"
+    ],
+
+    electricity_installation:
+        "Electrical wires installed into the walls in compliance with the European Union standard, a distribution cabinet with safety automation, sockets and switches, electrical convectors, LED spotlights",
+
+    bathroom:
+        "Tiled bathroom, toilet bowl, wash basin with mixer, wash basin cabin, mirror cabin, shower glass with a built-in ladder, shower mixer, electrical water heater, manifold cabinet",
+
+    doors_and_windows:
+        "Triple-glass PVC/ALU/wood (by choice) windows and doors",
+
+    adjustability:
+        "Interior plan, placement of partition walls, placement and number of windows and doors, wool insulation, exterior and interior finish",
+
+    additional_options: [
+        "Terrace",
+        "Furniture",
+        "Kitchen furniture with equipment"
+    ]
+};
 
 
 export function getProducts(t: (key: string) => string): Product[] {
@@ -129,6 +181,8 @@ export function getProducts(t: (key: string) => string): Product[] {
                     url: "https://voltamp.ee/docs/tigo_tap_paigaldus.pdf"
                 }
             },
+
+            techSpecs: defaultTechSpecs,
 
             images: [
                 firstProductSecond,
@@ -172,6 +226,8 @@ export function getProducts(t: (key: string) => string): Product[] {
                 }
             },
 
+            techSpecs: defaultTechSpecs,
+
             images: [
                 secondProduct1,
                 secondProduct2,
@@ -209,6 +265,8 @@ export function getProducts(t: (key: string) => string): Product[] {
                 }
             },
 
+            techSpecs: defaultTechSpecs,
+
             images: [
                 thirdProduct1,
                 thirdProduct2,
@@ -245,6 +303,8 @@ export function getProducts(t: (key: string) => string): Product[] {
                     url: "https://voltamp.ee/docs/tigo_tap_paigaldus.pdf"
                 }
             },
+
+            techSpecs: defaultTechSpecs,
 
             images: [
                 fourhProduct1,
@@ -287,6 +347,8 @@ export function getProducts(t: (key: string) => string): Product[] {
                 }
             },
 
+            techSpecs: defaultTechSpecs,
+
             images: [
                 fifthProduct1,
                 fifthProduct2,
@@ -321,6 +383,8 @@ export function getProducts(t: (key: string) => string): Product[] {
                 }
             },
 
+            techSpecs: defaultTechSpecs,
+
             images: [
                 sixthProduct1,
                 sixthProduct2,
@@ -353,6 +417,8 @@ export function getProducts(t: (key: string) => string): Product[] {
                     url: "https://voltamp.ee/docs/tigo_tap_paigaldus.pdf"
                 }
             },
+
+            techSpecs: defaultTechSpecs,
 
             images: [
                 seventhProduct1,

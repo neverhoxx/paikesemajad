@@ -22,6 +22,8 @@ import { PiMedal } from "react-icons/pi";
 
 import Link from "next/link";
 
+import CharacteristicsBlock from "@/components/shared/projects/CharacteristicsBlock";
+
 interface Props {
     params: Promise<{ id: string }>;
 }
@@ -75,7 +77,64 @@ export default function ProductDetails({ params }: Props) {
                     <div className="w-full md:w-1/2 ">
                         <h2 className="text-2xl sm:text-3xl font-bold">{product.name}</h2>
                         <p className="mt-4 text-sm sm:text-base">{product.text}</p>
+                        <div className="mt-4">
+                            <h2 className="text-[20px] font-semibold">
+                                Solantra roof - included
+                            </h2>
 
+                            <div className="flex mt-2 gap-5">
+                                <div className="">
+                                    <h4 className="text-[20px] opacity-75">
+                                        Est. kWh/yr (EE)
+                                    </h4>
+                                    <p className="text-2xl font-semibold">
+                                        8,900
+                                    </p>
+                                </div>
+
+                                <div className="">
+                                    <h4 className="text-[20px] opacity-75">
+                                        Est. kWh/yr (DE)
+                                    </h4>
+                                    <p className="text-2xl font-semibold">
+                                        9,600
+                                    </p>
+                                </div>
+
+                                <div className="">
+                                    <h4 className="text-[20px] opacity-75">
+                                        Est. kWh/yr (ES)
+                                    </h4>
+                                    <p className="text-2xl font-semibold">
+                                        11,800
+                                    </p>
+                                </div>
+
+                                <div className="">
+                                    <h4 className="text-[20px] opacity-75">
+                                        Lead time
+                                    </h4>
+                                    <p className="text-2xl font-semibold">
+                                        12 weeks
+                                    </p>
+                                </div>
+                            </div>
+
+                            <ul className="list-disc pl-5 mt-4">
+                                <li>
+                                    Integrated watertight system sized to roof geometry
+                                </li>
+                                <li>
+                                    Fire class and rapid shutdown compliant (UL/EN regional)
+                                </li>
+                                <li>
+                                    Wind and snow ratings suited for Nodric climates
+                                </li>
+                                <li>
+                                    Battery and EV charger options available
+                                </li>
+                            </ul>
+                        </div>
                         <div className="mt-6 ">
                             <ul className="flex-wrap flex justify-center items-center">
                                 <li className="flex items-center w-full sm:w-1/2 mt-2">
@@ -208,6 +267,12 @@ export default function ProductDetails({ params }: Props) {
                                     </div>
                                 </li>
                             </ul>
+
+                            <h3 className="text-4xl text-center font-bold mt-2">
+                                Powered by <Link className="underline" href="https://en.via-s.lv/">
+                                    via-s factory
+                                </Link>
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -216,6 +281,47 @@ export default function ProductDetails({ params }: Props) {
                     <h2 className="text-2xl sm:text-3xl font-bold">Technical specification</h2>
                     <p className="mt-2 text-sm sm:text-base">Standard specification for module</p>
                 </div>
+
+                <div className="mt-10">
+                    <h2 className="text-2xl sm:text-3xl font-bold">Technical specification</h2>
+                    <p className="mt-2 text-sm sm:text-base">Standard specification for module</p>
+                </div>
+
+                <CharacteristicsBlock
+                    data={[
+                        { title: "Facade", value: [product.techSpecs.facade] },
+
+                        {
+                            title: "Interior options",
+                            value: product.techSpecs.interior_options
+                        },
+
+                        {
+                            title: "Flooring options",
+                            value: product.techSpecs.flooring_options
+                        },
+
+                        {
+                            title: "Insulation",
+                            value: product.techSpecs.insulation
+                        },
+
+                        { title: "Electricity installation", value: [product.techSpecs.electricity_installation] },
+
+                        { title: "Bathroom", value: [product.techSpecs.bathroom] },
+
+                        { title: "Doors and windows", value: [product.techSpecs.doors_and_windows] },
+
+                        { title: "Adjustability", value: [product.techSpecs.adjustability] },
+
+                        {
+                            title: "Additional options",
+                            value: product.techSpecs.additional_options
+                        },
+                    ]}
+                />
+
+
             </Container>
 
             <Lightbox

@@ -114,7 +114,7 @@ export default function Footer() {
                 <Container className="text-black text-[18px] flex justify-between items-center border-b-2 pb-10 border-[#c7c7c7]">
                     <div className="">
                         <h1 className="font-bold">Solantra OÜ</h1>
-                        <h3 className="mt-2 text-[16px] font-semibold">+372 1111 1111</h3>
+                        <h3 className="mt-2 text-[16px] font-semibold">+372 523 5932</h3>
                         <h3 className="text-[16px] font-semibold">info@solantra.com</h3>
                     </div>
 

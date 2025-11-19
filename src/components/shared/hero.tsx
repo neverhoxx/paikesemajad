@@ -6,7 +6,11 @@ import Link from "next/link";
 
 import HeroImage from "@/images/hero-bg.jpg";
 
+import { useTranslations } from "next-intl";
+import { useLocale } from 'next-intl';
+
 export default function HeroMain() {
+    const t = useTranslations("Main-main");
     return (
         <div
             className='hero bg-center bg-cover bg-no-repeat'
@@ -23,14 +27,14 @@ export default function HeroMain() {
             <Container className="hero flex flex-col justify-center pt-[90px]">
                 <div className="max-w-[500px]">
                     <h1 className="md:text-5xl text-3xl font-bold mb-6 text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        {t("Hero.title")}
                     </h1>
                     <p className="text-[16px] font-semibold md:opacity-80 mb-6 text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, neque placeat corporis sit eos dicta est et nemo possimus saepe, voluptatem quaerat architecto cum aut nostrum necessitatibus officia. Quisquam, aperiam?
+                        {t("Hero.text")}
                     </p>
 
                     <Link href="" className="flex gap-2 items-center select-none font-extrabold text-white">
-                        Uuri lisaks <FaArrowDown />
+                        {t("Hero.uuri")} <FaArrowDown />
                     </Link>
                 </div>
 

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../shared/container";
-import planImg from "@/images/main-hero-bg.png";
+import planImg from "@/images/main-pic-3.jpeg";
 
 import { useTranslations } from "next-intl";
 import { useLocale } from 'next-intl';
@@ -16,9 +16,9 @@ export default function PlanningBlock() {
     const availableLocales = ['et', 'en'];
     const currentLocale = availableLocales.includes(locale) ? locale : 'et';
     return (
-        <section className="bg-[#f2f7fb] py-16 md:py-24">
+        <section className="bg-[#f2f7fb] py-25">
             <Container>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center min-h-[80vh]">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
                     <div>
                         <h2 className="text-4xl text-blue-700 font-extrabold mb-8">
                             Kuidas alustada oma kodu planeerimisega?
@@ -37,13 +37,6 @@ export default function PlanningBlock() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center gap-6">
-                            <Link
-                                href={`/${currentLocale}/${nav_t("contact")}`}
-                                className="px-8 py-3 text-[#0014C7] font-bold border-2 border-[#0014C7] rounded-lg shadow-sm hover:bg-[#0014C7] hover:text-white transition duration-300"
-                            >
-                                ALUSTA OMA PROJEKTIGA
-                            </Link>
-
                             <Link
                                 href={`/${currentLocale}/${nav_t("projectss")}`}
                                 className="text-[#0014C7] font-semibold underline underline-offset-4 hover:text-black transition"

@@ -24,6 +24,11 @@
             "projects": "Our projects",
             "complete-works": "Completed works",
             "kusi-pakkumist": "Request a quote"
+        },
+        "Hero": {
+            "title": "Discover Solantra SolarHome",
+            "text": "The ultimate solution that turns your house into a sleek, efficient energy generator. Save on bills, earn through BIPV incentives, and increase your home's value—all with a stylish, seamless design. Power your future while making money and helping the planet.",
+            "uuri": "Find out more"
         }
     },
     "Projects": {
@@ -90,5 +95,17 @@
         "ehitusinfo": "prefab-technology",
         "meist": "about-us"
     },
-    "Project-details": {}
+    "Project-details": {},
+    "Ehitusinfo": {
+        "title": "Construction Information",
+        "text": "Here you’ll find detailed information on how we turn your idea into a final solution.",
+        "uuri": "Learn more",
+        "second-title": "How does prefabricated technology work?",
+        "first-step-title": "Design & Engineering",
+        "second-step-title": "Factory Construction",
+        "third-step-title": "On-site Assembly",
+        "first-step-text": "Custom layouts engineered for transport and seamless site assembly.",
+        "second-step-text": "Manufacturing in a controlled environment: precision, quality, and speed.",
+        "third-step-text": "Fast on-site assembly and professional solar system activation."
+    }
 }
