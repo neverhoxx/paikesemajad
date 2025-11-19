@@ -5,8 +5,13 @@ import { FaArrowDown } from "react-icons/fa6";
 import Link from "next/link";
 
 import HeroImage from "@/images/hero-bg.jpg";
+import { useTranslations } from 'next-intl';
+
 
 export default function HeroProjects() {
+
+    const t = useTranslations('Projects');
+
     return (
         <div
             className='hero bg-center bg-cover bg-no-repeat'
@@ -23,14 +28,14 @@ export default function HeroProjects() {
             <Container className="hero flex flex-col justify-center pt-[90px]">
                 <div className="max-w-[500px]">
                     <h1 className="md:text-5xl text-3xl font-bold mb-6 text-white">
-                        Meie projektide kataloog
+                        {t("projektide-katalog")}
                     </h1>
                     <p className="text-[16px] font-semibold md:opacity-80 mb-6 text-white">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, neque placeat corporis sit eos dicta est et nemo possimus saepe, voluptatem quaerat architecto cum aut nostrum necessitatibus officia. Quisquam, aperiam?
                     </p>
 
                     <Link href="" className="flex gap-2 items-center select-none font-extrabold text-white">
-                        Vaata meie projekte <FaArrowDown />
+                        {t("vaata")} <FaArrowDown />
                     </Link>
                 </div>
 

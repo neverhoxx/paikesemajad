@@ -31,7 +31,11 @@ export default function Kataloog() {
                     {products.slice(0, 4).map((project) => (
                         <div
                             key={project.id}
-                            className="bg-white rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl duration-300"
+                            className="bg-white rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-xl duration-300 border-8 border-black"
+                            style={{
+                                clipPath: "polygon(50% 0, 100% 26%, 100% 100%, 0 100%, 0 28%)",
+
+                            }}
                         >
                             <div className="relative w-full h-60">
                                 <Image
@@ -64,7 +68,7 @@ export default function Kataloog() {
 
                 <div className="text-center mt-5">
                     <Link className="opacity-70 select-none" href={`/${currentLocale}/${nav_t("projectss")}`}>
-                        Näita rohkem
+                        {t("näita")}
                     </Link>
                 </div>
             </Container>

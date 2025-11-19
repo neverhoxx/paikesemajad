@@ -82,35 +82,38 @@ export default function ProductDetails({ params }: Props) {
                         <p className="mt-4 text-sm sm:text-base">{product.text}</p>
 
                         <div className="mt-6">
-                            <h2 className="text-[20px] font-semibold">Solantra roof - included</h2>
+                            <h2 className="text-[18px] font-semibold">{t("solantra-roof-included")}</h2>
 
-                            <div className="flex mt-2 gap-5 flex-wrap">
-                                <div>
-                                    <h4 className="text-[20px] opacity-75">Est. kWh/yr (EE)</h4>
-                                    <p className="text-2xl font-semibold">8,900</p>
+                            <div className="flex mt-2 gap-2 flex-wrap">
+                                <div className="border border-gray-300 rounded-lg shadow-sm bg-white p-3">
+                                    <h4 className="text-[14px] opacity-75">Est. kWh/yr (EE)</h4>
+                                    <p className="text-[18px] font-semibold">8,900</p>
                                 </div>
 
-                                <div>
-                                    <h4 className="text-[20px] opacity-75">Est. kWh/yr (DE)</h4>
-                                    <p className="text-2xl font-semibold">9,600</p>
+                                <div className="border border-gray-300 rounded-lg p-3
+                             shadow-sm bg-white">
+                                    <h4 className="text-[14px] opacity-75">Est. kWh/yr (DE)</h4>
+                                    <p className="text-[18px] font-semibold">9,600</p>
                                 </div>
 
-                                <div>
-                                    <h4 className="text-[20px] opacity-75">Est. kWh/yr (ES)</h4>
-                                    <p className="text-2xl font-semibold">11,800</p>
+                                <div className="border border-gray-300 rounded-lg 
+                             shadow-sm bg-white p-3">
+                                    <h4 className="text-[14px] opacity-75">Est. kWh/yr (ES)</h4>
+                                    <p className="text-[18px] font-semibold">11,800</p>
                                 </div>
 
-                                <div>
-                                    <h4 className="text-[20px] opacity-75">Lead time</h4>
-                                    <p className="text-2xl font-semibold">12 weeks</p>
+                                <div className="border border-gray-300 rounded-lg 
+                             shadow-sm bg-white p-3">
+                                    <h4 className="text-[14px] opacity-75">Lead time</h4>
+                                    <p className="text-[18px] font-semibold ">12 weeks</p>
                                 </div>
                             </div>
 
-                            <ul className="list-disc pl-5 mt-4">
-                                <li>Integrated watertight system sized to roof geometry</li>
-                                <li>Fire class and rapid shutdown compliant (UL/EN regional)</li>
-                                <li>Wind and snow ratings suited for Nordic climates</li>
-                                <li>Battery and EV charger options available</li>
+                            <ul className="list-disc pl-5 mt-4 text-[14px]">
+                                <li>{t("integrated")}</li>
+                                <li>{t("fire")}</li>
+                                <li>{t("wind")}</li>
+                                <li>{t("battery")}</li>
                             </ul>
                         </div>
 
@@ -255,19 +258,23 @@ export default function ProductDetails({ params }: Props) {
                                 </li>
                             </ul>
 
-                            <h3 className="text-4xl text-center font-bold mt-4">
-                                Powered by{" "}
-                                <Link className="underline" href="https://en.via-s.lv/">
-                                    via-s factory
-                                </Link>
-                            </h3>
+                            <div className="mt-10 border border-gray-300 rounded-lg p-6
+                             shadow-sm bg-white">
+                                <h2 className="font-semibold mb-2">
+                                    Factory profile
+                                </h2>
+
+                                <h3>
+                                    Powered by <Link className="underline font-semibold" href="https://en.via-s.lv/">via-s factory</Link>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="mt-14 mb-6 border-b border-gray-300 pb-4">
-                    <h2 className="text-2xl sm:text-3xl font-bold">Technical specification</h2>
-                    <p className="mt-2 text-sm sm:text-base">Standard specification for module</p>
+                    <h2 className="text-2xl sm:text-3xl font-bold">{t("technical-specification")}</h2>
+                    <p className="mt-2 text-sm sm:text-base">{t("standard-specification")}</p>
                 </div>
 
 

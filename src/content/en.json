@@ -81,12 +81,24 @@
         "seventh-project": {
             "name": "Miia House 115 m²",
             "text": "Miia is a cozy two-story house with a Nordic design that fits perfectly in both the city and the middle of nature."
-        }
+        },
+        "projektide-katalog": "Our project catalog",
+        "meie-projektid": "Our projects",
+        "vaata": "See our projects",
+        "solantra-roof-included": "Solantra roof - included",
+        "integrated ": "Integrated watertight system sized to roof geometry",
+        "fire": "Fire class and rapid shutdown compliant (UL/EN regional)",
+        "wind": "Wind and snow ratings suited for Nordic climates",
+        "battery": "Battery and EV charger options available",
+        "technical-specification": "Technical specification",
+        "standard-specification": "Standard specification for module",
+        "näita": "See more"
     },
     "Contact": {
         "title": "Ready to start your project?",
         "text": "Get in touch and we will discuss options tailored to your needs.",
-        "btn": "Get in touch"
+        "btn": "Get in touch",
+        "info": "Contact information"
     },
     "Navigations": {
         "projectss": "projects",
@@ -95,7 +107,6 @@
         "ehitusinfo": "prefab-technology",
         "meist": "about-us"
     },
-    "Project-details": {},
     "Ehitusinfo": {
         "title": "Construction Information",
         "text": "Here you’ll find detailed information on how we turn your idea into a final solution.",

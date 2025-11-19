@@ -1,4 +1,4 @@
-import firstProductMain from "@/images/firstProject-main.jpg";
+import firstProductMain from "@/images/firstProject-main.jpeg";
 import firstProductSecond from "@/images/firstProject-second.jpg";
 import firstProductThird from "@/images/firstProject-third.jpg";
 import firstProductFourth from "@/images/firstProject-fourth.jpg";
@@ -40,7 +40,7 @@ import fourhProduct9 from "@/images/fourhProject-9.jpg";
 import fourhProduct10 from "@/images/fourhProject-10.jpg";
 import fourhProduct11 from "@/images/fourhProject-11.jpg";
 
-import fifthProduct1 from "@/images/lumimaja.webp";
+import fifthProduct1 from "@/images/lumimaja.jpeg";
 import fifthProduct2 from "@/images/lumimaja2.webp";
 import fifthProduct3 from "@/images/lumimaja3.webp";
 import fifthProduct4 from "@/images/lumimaja4.webp";

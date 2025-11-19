@@ -37,7 +37,7 @@ export default function PremiumContactForm() {
                 <div className="md:w-1/2 w-full mt-5 md:mt-0">
                     <div className="bg-[#f3f2f2] shadow-2xl rounded-2xl p-10">
                         <p className="font-bold mb-5 text-2xl">
-                            Contact information
+                            {t("info")}
                         </p>
 
                         <ul className="flex flex-col gap-3">

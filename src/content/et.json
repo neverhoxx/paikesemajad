@@ -81,12 +81,24 @@
         "seventh-project": {
             "name": "Miia Maja 115 m²",
             "text": "Miia on põhjamaise disainiga, õdus kahekordne maja, mis sobib ideaalselt nii linna kui ka looduse keskele."
-        }
+        },
+        "projektide-katalog": "Meie projektide kataloog",
+        "vaata": "Vaata meie projekte",
+        "meie-projektid": "Meie projektid",
+        "solantra-roof-included": "Solantra katus - olemas",
+        "integrated": "Integreeritud veekindel süsteem, mis on kohandatud katuse geomeetriale",
+        "fire": "Tuleklassi ja kiire väljalülituse nõuetele vastav (UL/EN piirkondlik)",
+        "wind": "Põhjamaade kliimasse sobivad tuule- ja lumehinnangud",
+        "battery": "Aku ja elektriauto laadimise valikud on saadaval",
+        "technical-specification": "Tehniline kirjeldus",
+        "standard-specification": "Mooduli standardspetsifikatsioon",
+        "näita": "Näita rohkem"
     },
     "Contact": {
         "title": "Kas oled valmis oma projektiga alustama?",
         "text": "Võta ühendust ja arutame võimalusi täpselt Sinu vajaduste järgi.",
-        "btn": "Võta ühendust"
+        "btn": "Võta ühendust",
+        "info": "Kontakti info"
     },
     "Navigations": {
         "projectss": "projektid",
