@@ -7,11 +7,12 @@ import Link from "next/link";
 
 import voltampLogo from "@/images/partners/voltamplogo.webp";
 import kodukuubisLogo from "@/images/partners/kodu_kuubis_logo_3.png"
+import pohuplaatLogo from "@/images/partners/pohuplaat-dark-logo.png"
 
 const PARTNERS = [
     { name: "Voltamp", logo: voltampLogo, href: "https://www.voltamp.ee" },
     { name: "Kodukuubis", logo: kodukuubisLogo, href: "https://kodukuubis.com" },
-    { name: "Partner 3", logo: voltampLogo, href: "/" },
+    { name: "Põhuplaat", logo: pohuplaatLogo, href: "https://pohuplaat.ee" },
     { name: "Partner 4", logo: voltampLogo, href: "/" },
     { name: "Partner 5", logo: voltampLogo, href: "/" },
 ];
