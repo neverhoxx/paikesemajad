@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useLocale } from 'next-intl';
 
-import { FaPhoneAlt, FaClock } from "react-icons/fa";
+import { FaPhoneAlt, FaClock, FaArrowRight } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function PremiumContactForm() {
@@ -17,41 +17,80 @@ export default function PremiumContactForm() {
     const currentLocale = availableLocales.includes(locale) ? locale : 'et';
 
     const contactPath = currentLocale === "et" ? "kontakt" : "contact";
+
+    const infoItems = [
+        { icon: FaPhoneAlt, label: "+372 523 5932", href: "tel:+3725235932" },
+        { icon: MdEmail, label: "info@paikesemajad.ee", href: "mailto:info@paikesemajad.ee" },
+        { icon: FaClock, label: "Mon-Fri: 9:00-17:00", href: undefined },
+    ];
+
     return (
-        <div className="shadow-2xl py-10">
-            <Container className="flex flex-wrap">
-                <div className="md:w-1/2 w-full mt-5 md:mt-0">
-                    <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 drop-shadow-lg text-blue-600">
+        <div className="relative overflow-hidden bg-white py-20 md:py-28">
+            <div className="pointer-events-none absolute -top-40 right-[-10%] h-96 w-96 rounded-full bg-blue-600/10 blur-3xl" />
+
+            <Container className="relative flex flex-col gap-14 md:flex-row md:items-center md:gap-10">
+                <div className="md:w-1/2">
+                    <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-blue-600">
+                        {t("info")}
+                    </span>
+
+                    <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[#111827] lg:text-4xl">
                         {t("title")}
                     </h2>
-                    <p className="text-lg opacity-90 mb-10">
+
+                    <p className="mt-5 max-w-md text-[17px] leading-relaxed text-[#4B5563]">
                         {t("text")}
                     </p>
 
-                    <Link className="px-10 py-3 bg-blue-600 text-white rounded-2xl hover:bg-blue-900 duration-300 select-none" href={`/${currentLocale}/${contactPath}`}>
+                    <Link
+                        href={`/${currentLocale}/${contactPath}`}
+                        className="group mt-9 inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-9 py-3.5 text-white shadow-lg shadow-blue-600/20 transition-all duration-300 hover:bg-blue-700 hover:shadow-blue-600/30 select-none"
+                    >
                         {t("btn")}
+                        <FaArrowRight
+                            size="13"
+                            className="transition-transform duration-300 group-hover:translate-x-1"
+                        />
                     </Link>
                 </div>
-                <div className="md:w-1/2 w-full mt-5 md:mt-0">
-                    <div className="bg-[#f3f2f2] shadow-2xl rounded-2xl p-10">
-                        <p className="font-bold mb-5 text-2xl">
+
+                <div className="md:w-1/2">
+                    <div className="rounded-3xl border border-[#EEF0F3] bg-[#F7F8FA] p-8 shadow-xl shadow-black/[0.03] md:p-10">
+                        <p className="mb-7 text-xl font-bold text-[#111827]">
                             {t("info")}
                         </p>
 
-                        <ul className="flex flex-col gap-3">
-                            <li className="flex gap-2 items-center text-[18px]">
-                                <FaPhoneAlt className="text-blue-600" /> +372 523 5932
-                            </li>
-                            <li className="flex gap-2 items-center text-[18px]">
-                                <MdEmail className="text-blue-600 text-[20px]" /> info@paikesemajad.ee
-                            </li>
-                            <li className="flex gap-2 items-center text-[18px]">
-                                <FaClock className="text-blue-600" /> Mon-Fri: 9:00-17:00
-                            </li>
+                        <ul className="flex flex-col gap-5">
+                            {infoItems.map(({ icon: Icon, label, href }) => {
+                                const content = (
+                                    <>
+                                        <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-blue-600/10 text-blue-600 transition-colors duration-300 group-hover:bg-blue-600 group-hover:text-white">
+                                            <Icon size="16" />
+                                        </span>
+                                        <span className="text-[16px] font-medium text-[#1F2937]">
+                                            {label}
+                                        </span>
+                                    </>
+                                );
+
+                                return (
+                                    <li key={label}>
+                                        {href ? (
+                                            <a href={href} className="group flex items-center gap-4">
+                                                {content}
+                                            </a>
+                                        ) : (
+                                            <div className="flex items-center gap-4">
+                                                {content}
+                                            </div>
+                                        )}
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </div>
                 </div>
-            </Container >
-        </div >
+            </Container>
+        </div>
     );
 }

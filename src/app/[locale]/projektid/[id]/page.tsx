@@ -78,7 +78,19 @@ export default function ProductDetails({ params }: Props) {
                     </div>
 
                     <div className="w-full md:w-1/2">
-                        <h2 className="text-2xl sm:text-3xl font-bold">{product.name}</h2>
+                        <div className="flex items-start justify-between gap-4 flex-wrap">
+                            <h2 className="text-2xl sm:text-3xl font-bold">{product.name}</h2>
+
+                            <div className="rounded-xl bg-blue-600/10 px-4 py-2 text-right">
+                                <p className="text-[12px] uppercase tracking-wide text-blue-600/80">
+                                    {t("price")}
+                                </p>
+                                <p className="text-xl font-bold text-blue-600">
+                                    {product.price ? `${product.price} €` : t("priceNotAvailable") || "Hind pole saadaval"}
+                                </p>
+                            </div>
+                        </div>
+
                         <p className="mt-4 text-sm sm:text-base">{product.text}</p>
 
                         <div className="mt-6">

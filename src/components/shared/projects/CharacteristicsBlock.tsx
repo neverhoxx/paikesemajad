@@ -13,7 +13,7 @@ type CharacteristicsProps = {
 
 const CharacteristicsBlock: React.FC<CharacteristicsProps> = ({ data }) => {
     return (
-        <div className="mt-10 border border-gray-300 rounded-lg p-6 shadow-sm bg-white">
+        <div className="my-10 border border-gray-300 rounded-lg p-6 shadow-sm bg-white">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10">
                 {data.map((item, index) => (
                     <div

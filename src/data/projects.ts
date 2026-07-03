@@ -70,6 +70,7 @@ interface BaseProduct {
     id: number;
     name: string;
     text: string;
+    price: number;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     main_image: any;
     charasteristic: Characteristics;
@@ -159,6 +160,7 @@ export function getProducts(t: (key: string) => string): Product[] {
             name: t("first-project.name"),
             text: t("first-project.text"),
             main_image: firstProductMain,
+            price: 35000,
 
             charasteristic: {
                 area: "35 m²",
@@ -203,6 +205,7 @@ export function getProducts(t: (key: string) => string): Product[] {
             name: t("second-project.name"),
             text: t("second-project.text"),
             main_image: secondProduct1,
+            price: 35000,
 
             charasteristic: {
                 area: "72 m²",
@@ -242,6 +245,7 @@ export function getProducts(t: (key: string) => string): Product[] {
             name: t("third-project.name"),
             text: t("third-project.text"),
             main_image: thirdProduct1,
+            price: 35000,
 
             charasteristic: {
                 area: "120 m²",
@@ -281,6 +285,7 @@ export function getProducts(t: (key: string) => string): Product[] {
             name: t("fourth-project.name"),
             text: t("fourth-project.text"),
             main_image: fourhProduct1,
+            price: 35000,
 
             charasteristic: {
                 area: "76 m²",
@@ -324,6 +329,7 @@ export function getProducts(t: (key: string) => string): Product[] {
             name: t("fifth-project.name"),
             text: t("fifth-project.text"),
             main_image: fifthProduct1,
+            price: 35000,
 
             charasteristic: {
                 area: "138 m²",
@@ -360,6 +366,7 @@ export function getProducts(t: (key: string) => string): Product[] {
             name: t("sixth-project.name"),
             text: t("sixth-project.text"),
             main_image: sixthProduct1,
+            price: 35000,
 
             charasteristic: {
                 area: "184-241 m²",
@@ -395,6 +402,7 @@ export function getProducts(t: (key: string) => string): Product[] {
             name: t("sixth-project.name"),
             text: t("sixth-project.text"),
             main_image: seventhProduct1,
+            price: 35000,
 
             charasteristic: {
                 area: "115 m²",

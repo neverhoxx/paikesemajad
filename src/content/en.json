@@ -34,6 +34,7 @@
     "Projects": {
         "area": "Area (external)",
         "dimensions": "Dimensions (external)",
+        "price": "Price",
         "height": "Height (external)",
         "rooms": "Rooms",
         "loft": "Loft",
@@ -48,6 +49,7 @@
         "plan": "House plan",
         "included": "Included",
         "rooms-amount": "rooms",
+        "integrated": "Integrated waterproofing system adapted to the roof geometry",
         "years": "years",
         "drawings": "View drawings",
         "metal-frame": "Metal frame (CE)",

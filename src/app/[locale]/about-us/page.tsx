@@ -1,6 +1,6 @@
 export default function MeistPage() {
     return (
-        <div className="pt-[185px]">
+        <div className="py-[185px]">
             <h1 className="md:text-4xl text-3xl font-bold mb-20 text-black text-center">
                 Meet the Solantra Solarhome Team
             </h1>
