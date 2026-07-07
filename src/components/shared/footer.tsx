@@ -16,6 +16,7 @@ import { FaFacebookF } from "react-icons/fa";
 export default function Footer() {
     const nav_t = useTranslations("Navigations");
     const t = useTranslations("Header");
+    const ft = useTranslations("footer");
 
     const NAV_LINKS = [
         { key: "katalog", path: nav_t("projectss"), label: t("headerNav.katalog") },
@@ -39,7 +40,7 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="mt-4 max-w-[240px] text-[14px] leading-relaxed text-[#8C8880]">
-                            Stiilsed ja tõhusad päikesemajad sinu koduks.
+                            {ft("text")}
                         </p>
                     </div>
 
@@ -85,13 +86,13 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-12 flex flex-col items-center gap-2 border-t border-[#E7E2D8] pt-6 text-[13px] text-[#8C8880] md:flex-row md:justify-between">
-                    <span>© {new Date().getFullYear()} Solantra. Kõik õigused kaitstud.</span>
+                    <span>© {new Date().getFullYear()} Solantra. {ft("oigused")}.</span>
                     <div className="flex items-center gap-5">
                         <Link href="/privaatsuspoliitika" className="hover:text-[#1B1B18] transition-colors duration-300">
-                            Privaatsuspoliitika
+                            {ft("privacy")}
                         </Link>
                         <Link href="/kasutustingimused" className="hover:text-[#1B1B18] transition-colors duration-300">
-                            Kasutustingimused
+                            {ft("terms")}
                         </Link>
                     </div>
                 </div>

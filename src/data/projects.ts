@@ -160,7 +160,7 @@ export function getProducts(t: (key: string) => string): Product[] {
             name: t("first-project.name"),
             text: t("first-project.text"),
             main_image: firstProductMain,
-            price: 35000,
+            price: 58185,
 
             charasteristic: {
                 area: "35 m²",
@@ -205,7 +205,7 @@ export function getProducts(t: (key: string) => string): Product[] {
             name: t("second-project.name"),
             text: t("second-project.text"),
             main_image: secondProduct1,
-            price: 35000,
+            price: 64655,
 
             charasteristic: {
                 area: "72 m²",
@@ -402,7 +402,7 @@ export function getProducts(t: (key: string) => string): Product[] {
             name: t("sixth-project.name"),
             text: t("sixth-project.text"),
             main_image: seventhProduct1,
-            price: 35000,
+            price: 123123,
 
             charasteristic: {
                 area: "115 m²",

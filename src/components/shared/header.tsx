@@ -53,6 +53,7 @@ export default function Header() {
     };
 
     const navLinks = [
+        { key: "solantra", path: nav_t("solantra"), label: t("headerNav.solantra") },
         { key: "katalog", path: nav_t("projectss"), label: t("headerNav.katalog") },
         { key: "referentsid", path: nav_t("referentsid"), label: t("headerNav.referentsid") },
         { key: "ehitusinfo", path: nav_t("ehitusinfo"), label: t("headerNav.ehitusinfo") },
@@ -70,7 +71,6 @@ export default function Header() {
                     <Image src={logo} alt="Solantra" className="h-auto w-[160px]" />
                 </Link>
 
-                {/* Desktop navigation */}
                 <nav className="hidden md:flex gap-10">
                     <ul className="flex items-center gap-6">
                         {navLinks.map((link) => (

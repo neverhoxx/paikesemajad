@@ -9,7 +9,8 @@
             "referentsid": "References",
             "ehitusinfo": "Prefab technology",
             "meist": "About us",
-            "kontakt": "Contact"
+            "kontakt": "Contact",
+            "solantra": "Solantra solar roof"
         }
     },
     "Stats": {
@@ -107,7 +108,8 @@
         "contact": "contact",
         "referentsid": "references",
         "ehitusinfo": "prefab-technology",
-        "meist": "about-us"
+        "meist": "about-us",
+        "solantra": "solantra-solar-roof"
     },
     "Ehitusinfo": {
         "title": "Construction Information",
@@ -120,5 +122,60 @@
         "first-step-text": "Custom layouts engineered for transport and seamless site assembly.",
         "second-step-text": "Manufacturing in a controlled environment: precision, quality, and speed.",
         "third-step-text": "Fast on-site assembly and professional solar system activation."
+    },
+    "Solantraroof": {
+        "features": {
+            "title1": "Seamless Design",
+            "title2": "Reliable Performance",
+            "title3": "Built for Estonian Weather",
+            "title4": "Long-Term Warranty",
+            "text1": "Each panel is integrated into the roof tile, so from a distance your roof looks just as clean and elegant as a traditional roof.",
+            "text2": "The modules generate electricity even in diffuse light and cloudy weather, not only in direct sunlight.",
+            "text3": "The impact- and wind-resistant roofing withstands heavy snow loads, strong winds, and harsh winters.",
+            "text4": "The roof and solar modules are covered by a single warranty, so you don't have to deal with separate systems."
+        },
+        "steps": {
+            "title1": "Roof Inspection",
+            "title2": "System Design",
+            "title3": "Installation",
+            "title4": "Commissioning",
+            "text1": "We inspect your property, measure the roof's angle and orientation, and estimate its energy production potential.",
+            "text2": "We create a customized layout because every roof has its own shape, orientation, and shading conditions.",
+            "text3": "Our certified installation team integrates the solar roof during the regular roofing process without mounting separate panels.",
+            "text4": "The system is connected to the grid and configured, allowing your roof to start producing electricity immediately."
+        },
+        "docs": {
+            "title1": "Product Brochure",
+            "title2": "Installation Guide",
+            "title3": "Warranty Terms",
+            "text1": "Technical overview and components of the Solantra solar roof.",
+            "text2": "Step-by-step installation guide for professional installers.",
+            "text3": "Detailed product and performance warranty conditions."
+        },
+        "heroTitle": "A roof that generates electricity — without anyone noticing",
+        "heroText": "The Solantra solar roof combines the appearance of traditional roof tiles with the efficiency of solar panels. From the street it looks like a regular roof, while every sunny hour is converted into electricity.",
+        "askPrice": "Request a Quote",
+        "howItWorks": "How It Works",
+        "years": "years",
+        "warranty": "product warranty",
+        "module": "module efficiency",
+        "docsTitle": "Documents",
+        "nahtavat": "visible solar panels on the roof",
+        "whatDo": "What Makes the Solantra Solar Roof Special",
+        "nelisammu": "Four simple steps from your current roof to a power-generating roof.",
+        "tehnilised": "Technical Specifications",
+        "näidisandmed": "Sample specifications — final values depend on the selected module and your roof configuration.",
+        "tootekirjeldused": "Product brochures, installation guides, and warranty documents in one place.",
+        "ctaTitle": "Ready to turn your roof into an energy source?",
+        "ctaText": "Let's discuss your roof's potential and prepare a tailored quotation for you.",
+        "ctaBtn": "Contact Us",
+        "download": "Download"
+    },
+    "footer": {
+        "oigused": "All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Use",
+        "text": "Stylish and efficient solar solutions for your home.",
+        "partners": "Partners"
     }
 }

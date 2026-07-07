@@ -86,7 +86,7 @@ export default function ProductDetails({ params }: Props) {
                                     {t("price")}
                                 </p>
                                 <p className="text-xl font-bold text-blue-600">
-                                    {product.price ? `${product.price} €` : t("priceNotAvailable") || "Hind pole saadaval"}
+                                    {product.price ? `${product.price} € + VAT` : t("priceNotAvailable") || "Hind pole saadaval"}
                                 </p>
                             </div>
                         </div>

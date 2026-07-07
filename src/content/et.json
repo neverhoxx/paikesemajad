@@ -9,7 +9,8 @@
             "referentsid": "Referentsid",
             "ehitusinfo": "Ehitusinfo",
             "meist": "Meist",
-            "kontakt": "Kontakt"
+            "kontakt": "Kontakt",
+            "solantra": "Solantra päikesekatus"
         }
     },
     "Stats": {
@@ -106,7 +107,8 @@
         "contact": "kontakt",
         "referentsid": "referentsid",
         "ehitusinfo": "ehitusinfo",
-        "meist": "meist"
+        "meist": "meist",
+        "solantra": "solantra-paikesekatus"
     },
     "Project-details": {},
     "Ehitusinfo": {
@@ -120,5 +122,60 @@
         "first-step-text": "Custom layouts engineered for transport and site assembly.",
         "second-step-text": "Kontrollitud keskkonnas tootmine: täpsus, kvaliteet, kiirus.",
         "third-step-text": "Kiire kohapealne kokkupanek ja professionaalne päikesesüsteemi aktiveerimine."
+    }, 
+    "Solantraroof": {
+        "features": {
+            "title1": "Märkamatu disain",
+            "title2": "Pidev tootlikkus",
+            "title3": "Ehitatud Eesti ilmale",
+            "title4": "Pikaajaline garantii",
+            "text1": "Iga paneel on peidetud katusekivi sisse, nii et katus näeb eemalt välja täpselt sama korralik nagu tavaline katus.",
+            "text2": "Moodulid muudavad päikesevalguse elektriks ka hajusa valguse ja pilvise ilmaga, mitte ainult selges päikesepaistes.",
+            "text3": "Löögi- ja tuulekindel kate peab vastu lumekoormusele, tuulepuhangutele ja külmadele talvedele.",
+            "text4": "Katus ja paneelid käivad ühe garantii alla, nii et sa ei pea eraldi muretsema kahe erineva süsteemi pärast."
+        },
+        "steps": {
+            "title1": "Katuse ülevaatus",
+            "title2": "Paigutuse disain",
+            "title3": "Paigaldus",
+            "title4": "Käivitus",
+            "text1": "Käime kohapeal, mõõdistame katuse kalde ja suuna ning hindame, kui palju energiat see suudaks toota.",
+            "text2": "Koostame sulle sobiva paigutuse — iga katus on erineva kuju ja varjudega, seega ka lahendus on individuaalne.",
+            "text3": "Meie partnermeeskond paigaldab katuse tavapärase katusetöö käigus, ilma eraldi paneelide kinnitamiseta.",
+            "text4": "Süsteem ühendatakse võrku ja seadistatakse, misjärel su katus hakkab kohe energiat tootma."
+        },
+        "docs": {
+            "title1": "Tootekirjeldus",
+            "title2": "Paigaldusjuhend",
+            "title3": "Garantiitingimused",
+            "text1": "Solantra päikesekatuse tehniline ülevaade ja komponendid.",
+            "text2": "Samm-sammuline juhend paigaldusmeeskonnale.",
+            "text3": "Toote- ja tootlikkusgarantii täpsed tingimused."
+        },
+        "heroTitle": "Katus, mis toodab elektrit - ilma et keegi seda märkaks",
+        "heroText": "Solantra päikesekatus ühendab tavalise katusekivi väljanägemise ja päikesepaneeli tootlikkuse. Tänavavaatest ei erine see tavalisest katusest — ent iga päikeseline tund muutub elektriks.",
+        "askPrice": "Küsi hinnapakkumist",
+        "howItWorks": "Kuidas see töötab",
+        "years": "aastat",
+        "warranty": "tootegarantii",
+        "module": "mooduli kasutegur",
+        "docsTitle": "Dokumendid",
+        "nahtavat": "nähtavat paneeli katuse",
+        "whatDo": "Mis teeb Solantra päikesekatuse eriliseks",
+        "nelisammu": "Neli sammu su praegusest katusest energiat tootva katuseni.",
+        "tehnilised": "Tehnilised andmed",
+        "näidisandmed": "Näidisandmed - täpsed näitajad kinnitame lähtuvalt valitud moodulist ja katuse konfiguratsioonist.",
+        "tootekirjeldused": "Tootekirjeldused, paigaldusjuhendid ja garantiitingimused ühest kohast.",
+        "ctaTitle": "Valmis oma katust energiaallikaks muutma?",
+        "ctaText": "Räägime läbi sinu katuse võimalused ja koostame sulle sobiva pakkumise.",
+        "ctaBtn": "Võta ühendust",
+        "download": "Laadi alla"
+    },
+    "footer": {
+        "oigused": "Kõik õigused kaitstud.",
+        "privacy": "Privaatsuspoliitika",
+        "terms": "Kasutustingimused",
+        "text": "Stiilsed ja tõhusad päikesemajad sinu koduks.",
+        "partners": "Partnerid"
     }
 }
