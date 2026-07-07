@@ -203,7 +203,7 @@ export default function SolarRoofPage() {
                 src={pic2}
                 alt="Solantra paigaldusmeeskond katusel töötamas"
                 fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
+                sizes=""
                 className="object-cover select-none "
               />
             </div>
