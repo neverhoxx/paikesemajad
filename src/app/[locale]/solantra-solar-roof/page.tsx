@@ -9,7 +9,9 @@ import pic2 from "@/images/main-pic-3.jpeg";
 import { useTranslations } from "next-intl";
 import { useLocale } from 'next-intl';
 
-import { FaPhoneAlt, FaClock, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+
+import type { ReactNode } from "react";
 
 /*
 <p className="mt-3 max-w-lg text-sm text-slate-500 text-center mx-auto">
@@ -32,7 +34,7 @@ import { FaPhoneAlt, FaClock, FaArrowRight } from "react-icons/fa";
 
 type Feature = {
   title: string;
-  description: any;
+  description: ReactNode;
 };
 
 type Step = {
@@ -54,15 +56,6 @@ type Doc = {
   fileSize?: string;
 };
 
-
-const SPECS: Spec[] = [
-  { label: "lorem asdasdasd", value: "100" },
-  { label: "lorem asdasdasd1", value: "100" },
-  { label: "lorem asdasdasd2", value: "100" },
-  { label: "lorem asdasdasd3", value: "100" },
-  { label: "lorem asdasdasd4", value: "100" },
-  { label: "lorem asdasdasd5", value: "100" },
-];
 
 export default function SolarRoofPage() {
   const t = useTranslations("Solantraroof");

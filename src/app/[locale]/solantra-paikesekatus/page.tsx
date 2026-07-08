@@ -56,16 +56,6 @@ type Doc = {
   fileSize?: string;
 };
 
-
-const SPECS: Spec[] = [
-  { label: "lorem asdasdasd", value: "100" },
-  { label: "lorem asdasdasd1", value: "100" },
-  { label: "lorem asdasdasd2", value: "100" },
-  { label: "lorem asdasdasd3", value: "100" },
-  { label: "lorem asdasdasd4", value: "100" },
-  { label: "lorem asdasdasd5", value: "100" },
-];
-
 export default function SolarRoofPage() {
   const t = useTranslations("Solantraroof");
   const nav_t = useTranslations("Navigations");
