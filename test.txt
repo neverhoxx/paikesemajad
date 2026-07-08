@@ -9,9 +9,7 @@ import pic2 from "@/images/main-pic-3.jpeg";
 import { useTranslations } from "next-intl";
 import { useLocale } from 'next-intl';
 
-import { FaArrowRight } from "react-icons/fa";
-
-import type { ReactNode } from "react";
+import { FaPhoneAlt, FaClock, FaArrowRight } from "react-icons/fa";
 
 /*
 <p className="mt-3 max-w-lg text-sm text-slate-500 text-center mx-auto">
@@ -34,7 +32,7 @@ import type { ReactNode } from "react";
 
 type Feature = {
   title: string;
-  description: ReactNode;
+  description: any;
 };
 
 type Step = {
@@ -199,6 +197,33 @@ export default function SolarRoofPage() {
         </div>
       </Container>
 
+      <section className="py-10 sm:py-16">
+  <Container>
+    <div className="relative h-[260px] overflow-hidden rounded-[32px] sm:h-[500px]">
+      <Image
+        src={pic2}
+        alt="Solantra päikesekatus"
+        fill
+        className="object-cover select-none"
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+
+      <div className="absolute bottom-8 left-6 max-w-xl text-white sm:left-10">
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          Päikesekatus, mis toodab energiat iga päev
+        </h2>
+
+        <p className="mt-4 text-sm leading-relaxed text-white/80 sm:text-base">
+          Solantra päikesekatus ühendab kaasaegse tehnoloogia ja elegantse
+          välimuse. Päikesepaneelid on integreeritud otse katuse lahendusse,
+          luues vastupidava ja esteetilise energiaallika sinu kodule.
+        </p>
+      </div>
+    </div>
+  </Container>
+</section>
+
       <Container>
         <div className="py-16 sm:py-20">
           <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
@@ -219,58 +244,71 @@ export default function SolarRoofPage() {
               </div>
             ))}
           </dl>
+
+          <div className="mt-16 grid gap-4 md:grid-cols-3">
+            {[1, 2, 3].map((item) => (
+              <div
+                key={item}
+                className="group relative h-[260px] overflow-hidden rounded-3xl"
+              >
+                <Image
+                  src={pic2}
+                  alt=""
+                  fill
+                  className="object-cover select-none transition duration-700 group-hover:scale-110"
+                />
+
+                <div className="absolute inset-0 bg-black/20" />
+              </div>
+            ))}
+          </div>
         </div>
       </Container>
 
-      <section id="kuidas-toimib" className="bg-slate-50">
-        <Container>
-          <div className="grid gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg sm:aspect-[4/3] lg:order-2">
-              <Image
-                src={pic2}
-                alt="Solantra paigaldusmeeskond katusel töötamas"
-                fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover select-none "
-              />
-            </div>
-            <div className="lg:order-1">
-              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-                {t("howItWorks")}
-              </h2>
-              <p className="mt-3 max-w-md text-slate-600">
-                {t("nelisammu")}
-              </p>
-              <ol className="mt-8 space-y-6">
-                {STEPS.map((step, i) => (
-                  <li key={step.title} className="flex gap-4">
-                    <span className="pt-0.5 text-sm font-semibold text-blue-600">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <h3 className="font-semibold text-slate-900">
-                        {step.title}
-                      </h3>
-                      <p className="mt-1 text-sm leading-relaxed text-slate-600">
-                        {step.description}
-                      </p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          </div>
-        </Container>
+      <section id="kuidas-toimib" className="bg-slate-50"> 
+        <Container> 
+          <div className="grid gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16"> 
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg sm:aspect-[4/3] lg:order-2"> 
+              <Image src={pic2} alt="Solantra paigaldusmeeskond katusel töötamas" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover select-none " /> 
+            </div> 
+            <div className="lg:order-1"> 
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"> 
+                {t("howItWorks")} 
+              </h2> 
+              <p className="mt-3 max-w-md text-slate-600"> 
+                {t("nelisammu")} 
+              </p> 
+              <ol className="mt-8 space-y-6"> 
+                {STEPS.map((step, i) => 
+                ( 
+                  <li key={step.title} className="flex gap-4"> 
+                    <span className="pt-0.5 text-sm font-semibold text-blue-600"> 
+                      {String(i + 1).padStart(2, "0")} 
+                    </span> 
+                    <div> 
+                      <h3 className="font-semibold text-slate-900"> 
+                        {step.title} 
+                      </h3> 
+                      <p className="mt-1 text-sm leading-relaxed text-slate-600"> 
+                        {step.description} 
+                      </p> 
+                    </div> 
+                  </li> 
+                ))} 
+              </ol> 
+            </div> 
+          </div> 
+        </Container> 
       </section>
 
       <Container>
         <div className="py-16 sm:py-20">
-          <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl text-center">
+          <h2 className="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
             {t("tehnilised")}
           </h2>
-          
         </div>
       </Container>
+
 
       <Container>
         <div className="py-16 sm:py-20" id="docs">
@@ -337,28 +375,57 @@ export default function SolarRoofPage() {
       </Container>
 
     
-      <Container>
-        <div className="flex flex-col justify-between gap-6 border-t border-slate-200 py-16 sm:flex-row sm:items-end sm:py-20">
-          <div>
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              {t("ctaTitle")}
-            </h2>
-            <p className="mt-2 max-w-md text-slate-600">
-              {t("ctaText")}
-            </p>
-          </div>
+      <section className="py-10 sm:py-16">
+  <Container>
+
+    <div className="relative overflow-hidden rounded-[32px]">
+
+      <div className="relative h-[420px]">
+
+        <Image
+          src={pic2}
+          alt="Solantra päikesekatus"
+          fill
+          className="object-cover select-none"
+        />
+
+        <div className="absolute inset-0 bg-black/50" />
+
+
+        <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12">
+
+          <h2 className="max-w-xl text-3xl font-bold text-white sm:text-5xl">
+            {t("ctaTitle")}
+          </h2>
+
+
+          <p className="mt-4 max-w-lg text-white/80">
+            {t("ctaText")}
+          </p>
+
+
           <Link
-            href={`/${currentLocale}/${contactHref}`}
-            className="group inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 text-sm text-white shadow-lg shadow-blue-600/20 transition-all duration-300 hover:bg-blue-700 hover:shadow-blue-600/30 select-none"
+            href={`/${currentLocale}/${nav_t("contact")}`}
+            className="mt-8 inline-flex w-fit items-center gap-3 rounded-xl bg-white px-7 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
           >
+
             {t("ctaBtn")}
+
             <FaArrowRight
               size="13"
               className="transition-transform duration-300 group-hover:translate-x-1"
             />
+
           </Link>
+
         </div>
-      </Container>
+
+      </div>
+
+    </div>
+
+  </Container>
+</section>
     </main>
   );
 }
