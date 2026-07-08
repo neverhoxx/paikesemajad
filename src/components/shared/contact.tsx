@@ -20,7 +20,7 @@ export default function PremiumContactForm() {
 
     const infoItems = [
         { icon: FaPhoneAlt, label: "+372 523 5932", href: "tel:+3725235932" },
-        { icon: MdEmail, label: "info@paikesemajad.ee", href: "mailto:info@paikesemajad.ee" },
+        { icon: MdEmail, label: "mait@voltamp.ee", href: "mailto:mait@voltamp.ee" },
         { icon: FaClock, label: "Mon-Fri: 9:00-17:00", href: undefined },
     ];
 
@@ -34,17 +34,17 @@ export default function PremiumContactForm() {
                         {t("info")}
                     </span>
 
-                    <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[#111827] lg:text-4xl">
+                    <h2 className="mt-4 text-[30px] font-extrabold leading-tight text-[#111827] lg:text-4xl">
                         {t("title")}
                     </h2>
 
-                    <p className="mt-5 max-w-md text-[17px] leading-relaxed text-[#4B5563]">
+                    <p className="mt-5 max-w-md text-[14px] leading-relaxed text-[#4B5563]">
                         {t("text")}
                     </p>
 
                     <Link
                         href={`/${currentLocale}/${contactPath}`}
-                        className="group mt-9 inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-9 py-3.5 text-white shadow-lg shadow-blue-600/20 transition-all duration-300 hover:bg-blue-700 hover:shadow-blue-600/30 select-none"
+                        className="group mt-9 inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 text-sm text-white shadow-lg shadow-blue-600/20 transition-all duration-300 hover:bg-blue-700 hover:shadow-blue-600/30 select-none"
                     >
                         {t("btn")}
                         <FaArrowRight

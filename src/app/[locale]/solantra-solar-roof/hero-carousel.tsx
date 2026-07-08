@@ -1,7 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useEffect, useState, type ReactNode } from "react";
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import type { StaticImageData } from "next/image";
 
 import pic1 from "@/images/hero-bg.jpg";
@@ -20,9 +26,18 @@ const SLIDES: Slide[] = [
   { id: "hero-3", src: pic2, alt: "Päikesekatus õhtuvalguses" },
 ];
 
-export default function HeroCarousel({ children }: { children?: ReactNode }) {
+export default function HeroCarousel({
+  children,
+}: {
+  children?: ReactNode;
+}) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+
+  const touchStartX = useRef<number | null>(null);
+  const touchEndX = useRef<number | null>(null);
+
+  const SWIPE_THRESHOLD = 50;
 
   const goTo = useCallback((next: number) => {
     setIndex((next + SLIDES.length) % SLIDES.length);
@@ -30,17 +45,45 @@ export default function HeroCarousel({ children }: { children?: ReactNode }) {
 
   useEffect(() => {
     if (paused) return;
+
     const id = setInterval(() => {
       setIndex((prev) => (prev + 1) % SLIDES.length);
-    }, 5500);
+    }, 3000);
+
     return () => clearInterval(id);
   }, [paused]);
 
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current === null || touchEndX.current === null) return;
+
+    const distance = touchStartX.current - touchEndX.current;
+
+    if (distance > SWIPE_THRESHOLD) {
+      goTo(index + 1);
+    } else if (distance < -SWIPE_THRESHOLD) {
+      goTo(index - 1);
+    }
+
+    touchStartX.current = null;
+    touchEndX.current = null;
+  };
+
   return (
     <div
-      className="group relative hero w-full overflow-hidden sm:h-[74vh] pt-14 md:pt-20"
+      className="group relative hero w-full overflow-hidden touch-pan-y sm:h-[74vh] pt-14 md:pt-20"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
       {SLIDES.map((slide, i) => (
         <Image
@@ -72,6 +115,7 @@ export default function HeroCarousel({ children }: { children?: ReactNode }) {
       >
         ‹
       </button>
+
       <button
         type="button"
         onClick={() => goTo(index + 1)}

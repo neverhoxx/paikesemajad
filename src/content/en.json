@@ -169,7 +169,10 @@
         "ctaTitle": "Ready to turn your roof into an energy source?",
         "ctaText": "Let's discuss your roof's potential and prepare a tailored quotation for you.",
         "ctaBtn": "Contact Us",
-        "download": "Download"
+        "download": "Download",
+        "productWarranty": "Product",
+        "installationWarranty": "Installation Warranty",
+        "and": "- and"
     },
     "footer": {
         "oigused": "All rights reserved.",

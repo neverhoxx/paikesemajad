@@ -61,18 +61,18 @@ export default function Footer() {
 
                     <div className="flex flex-col items-center gap-2 md:items-start">
                         <p className="text-[15px] font-semibold">Solantra OÜ</p>
-                        <a
+                        <Link
                             href="tel:+3725235932"
                             className="text-[15px] text-[#1B1B18]/80 transition-colors duration-300 hover:text-[#1B1B18]"
                         >
                             +372 523 5932
-                        </a>
-                        <a
-                            href="mailto:info@solantra.com"
+                        </Link>
+                        <Link
+                            href="mailto:mait@voltamp.ee"
                             className="text-[15px] text-[#1B1B18]/80 transition-colors duration-300 hover:text-[#1B1B18]"
                         >
-                            info@solantra.com
-                        </a>
+                            mait@voltamp.ee
+                        </Link>
                         <p className="text-[15px] text-[#8C8880]">Viljandi, Eesti</p>
                     </div>
 

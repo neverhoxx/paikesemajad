@@ -125,24 +125,24 @@
     }, 
     "Solantraroof": {
         "features": {
-            "title1": "Märkamatu disain",
-            "title2": "Pidev tootlikkus",
-            "title3": "Ehitatud Eesti ilmale",
+            "title1": "Stiilne disain",
+            "title2": "Tootlikkus",
+            "title3": "Ilmastikukindel ja turvaline",
             "title4": "Pikaajaline garantii",
-            "text1": "Iga paneel on peidetud katusekivi sisse, nii et katus näeb eemalt välja täpselt sama korralik nagu tavaline katus.",
-            "text2": "Moodulid muudavad päikesevalguse elektriks ka hajusa valguse ja pilvise ilmaga, mitte ainult selges päikesepaistes.",
-            "text3": "Löögi- ja tuulekindel kate peab vastu lumekoormusele, tuulepuhangutele ja külmadele talvedele.",
+            "text1": "Iga päikesepaneel on paigaldatus otse katuse roovile — see katus välja nagu traditsiooniline katus, kuid lähemalt avaldab see muljet oma modernse ja luksusliku olemusega.",
+            "text2": "Moodulid muudavad päikesevalguse elektrienergiaks ka hajusa valguse ja pilvisusega, mitte ainult selge ja päikesepaistelise ilmaga.",
+            "text3": "Solantra päikesekatus on äärmiselt ilmastikukindel ja turvaline. See on disainitud vastu pidama lumekoormusele, tuulepuhangutele ja külmadele talvedele.",
             "text4": "Katus ja paneelid käivad ühe garantii alla, nii et sa ei pea eraldi muretsema kahe erineva süsteemi pärast."
         },
         "steps": {
             "title1": "Katuse ülevaatus",
-            "title2": "Paigutuse disain",
+            "title2": "Pakkumine",
             "title3": "Paigaldus",
             "title4": "Käivitus",
-            "text1": "Käime kohapeal, mõõdistame katuse kalde ja suuna ning hindame, kui palju energiat see suudaks toota.",
-            "text2": "Koostame sulle sobiva paigutuse — iga katus on erineva kuju ja varjudega, seega ka lahendus on individuaalne.",
-            "text3": "Meie partnermeeskond paigaldab katuse tavapärase katusetöö käigus, ilma eraldi paneelide kinnitamiseta.",
-            "text4": "Süsteem ühendatakse võrku ja seadistatakse, misjärel su katus hakkab kohe energiat tootma."
+            "text1": "Vajadusel käime kohapeal, mõõdistame katuse kalde ja suuna ning hindame, kui palju energiat see suudaks toota.",
+            "text2": "Koostame sulle personaalse pakkumise — iga katus on erineva kuju ja varjudega, seega ka lahendus on individuaalne.",
+            "text3": "Meie meeskond paigaldab katuse vastavalt kokkulepitud tingimustele. Sellega seoses võtame meie vastutuse ja kohustuse garantii eest.",
+            "text4": "Süsteem ühendatakse kas offgridi's või võrku ning seadistatakse, misjärel hakkab teie katus kohe energiat tootma ja teile tulu tooma."
         },
         "docs": {
             "title1": "Tootekirjeldus",
@@ -153,12 +153,12 @@
             "text3": "Toote- ja tootlikkusgarantii täpsed tingimused."
         },
         "heroTitle": "Katus, mis toodab elektrit - ilma et keegi seda märkaks",
-        "heroText": "Solantra päikesekatus ühendab tavalise katusekivi väljanägemise ja päikesepaneeli tootlikkuse. Tänavavaatest ei erine see tavalisest katusest — ent iga päikeseline tund muutub elektriks.",
+        "heroText": "Solantra päikesekatus — päikesepaneelidest katuselahendus, mis on teie hoonele mõeldud energiat tootev terviksüsteem (mitte eraldi paigaldatavad paneelid). See muudab teie kodu stiilseks, kaasaegseks samal ajal ära kasutades päikeseenergiat, et vähendada teie kulutusi üha kallinevale elektrile. See on katus, olles kuluefektiivne, nutikas ja stiilne nii lähedalt kui eemalt vaadatuna.",
         "askPrice": "Küsi hinnapakkumist",
         "howItWorks": "Kuidas see töötab",
         "years": "aastat",
         "warranty": "tootegarantii",
-        "module": "mooduli kasutegur",
+        "module": "mooduli võimsus",
         "docsTitle": "Dokumendid",
         "nahtavat": "nähtavat paneeli katuse",
         "whatDo": "Mis teeb Solantra päikesekatuse eriliseks",
@@ -166,10 +166,13 @@
         "tehnilised": "Tehnilised andmed",
         "näidisandmed": "Näidisandmed - täpsed näitajad kinnitame lähtuvalt valitud moodulist ja katuse konfiguratsioonist.",
         "tootekirjeldused": "Tootekirjeldused, paigaldusjuhendid ja garantiitingimused ühest kohast.",
-        "ctaTitle": "Valmis oma katust energiaallikaks muutma?",
+        "ctaTitle": "Kas oled valmis muutma oma katuse stiilseks energiaallikaks?",
         "ctaText": "Räägime läbi sinu katuse võimalused ja koostame sulle sobiva pakkumise.",
         "ctaBtn": "Võta ühendust",
-        "download": "Laadi alla"
+        "download": "Laadi alla",
+        "productWarranty": "Toote",
+        "installationWarranty": "Paigaldusgarantii",
+        "and": "- ja"
     },
     "footer": {
         "oigused": "Kõik õigused kaitstud.",

@@ -28,19 +28,19 @@ export default function MainFirstBlock() {
             }}
         >
             <Container>
-                <h2 className="text-3xl font-extrabold text-[#fff] mb-3">
+                <h2 className="text-[30px] font-extrabold text-[#fff] mb-3">
                     {t("choose")}
                 </h2>
-                <p className="md:text-[18px] text-[16px] font-semibold text-white max-w-[750px]">
+                <p className="text-[14px] font-semibold text-white max-w-[750px]">
                     {t("choose-text")}
                 </p>
 
-                <div className="flex flex-wrap gap-5 mt-5 select-none md:justify-normal justify-center">
-                    <Link className="px-10 py-3 text-white border-3 border-[#C5FFFD] rounded-2xl hover:text-black hover:bg-[#C5FFFD] duration-500" href={`/${currentLocale}/${nav_t("projectss")}`}>
+                <div className="mt-7 flex flex-wrap gap-3 select-none">
+                    <Link className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100" href={`/${currentLocale}/${nav_t("projectss")}`}>
                         {tBtn("projects")}
                     </Link>
 
-                    <Link className="px-10 py-3 border-3 text-white border-[#C5FFFD] rounded-2xl hover:text-black hover:bg-[#C5FFFD] duration-500" href={`/${currentLocale}/${nav_t("referentsid")}`}>
+                    <Link className="rounded-lg border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/70" href={`/${currentLocale}/${nav_t("referentsid")}`}>
                         {tBtn("complete-works")}
                     </Link>
                 </div>

@@ -20,17 +20,17 @@ export default function PlanningBlock() {
             <Container>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
                     <div>
-                        <h2 className="text-4xl text-blue-700 font-extrabold mb-8">
+                        <h2 className="text-[30px] text-blue-700 font-extrabold mb-8">
                             Kuidas alustada oma kodu planeerimisega?
                         </h2>
-                        <p className="text-lg text-gray-700 mb-4">
+                        <p className="text-sm text-gray-700 mb-4">
                             Küsimusi on kindlasti palju, nii krundi asetuse, hoone ruumiplaneeringu,
                             ehituse eelarve kui ka töö etappide kohta.
                         </p>
-                        <p className="text-lg text-gray-700 mb-4">
+                        <p className="text-sm text-gray-700 mb-4">
                             Kutsume teid külla, et saaksime selles osas rohkem abiks olla!
                         </p>
-                        <p className="text-lg text-gray-700 mb-10">
+                        <p className="text-sm text-gray-700 mb-10">
                             Kohtumise paremaks ettevalmistamiseks palume võimalusel vastata
                             registreerumisvormil ka mõnele täpsustavale küsimusele, mis avanevad
                             klikkides allolevale lingile.
