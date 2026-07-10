@@ -186,6 +186,22 @@
     "meta": {
         "title": "Solantra | Solar Panels & Prefab Solar Homes in Estonia",
         "description": "Solantra provides solar panels, solar roofs, and prefab solar homes with integrated solar energy solutions in Estonia. Professional installation and long-term warranty."
+    },
+
+    "UnderConstruction": {
+        "eyebrow": "Coming soon",
+        "title": "This page is still under construction",
+        "text": "We're working on getting this part of the Solantra site ready. In the meantime, take a look at what we already offer.",
+        "back": "Back to homepage"
+    },
+    
+    "Planning": {
+        "title": "How to start planning your home?",
+        "text1": "There are many questions to consider, including the plot layout, floor plan, construction budget and project stages.",
+        "text2": "We invite you to visit us so we can help you with the planning process.",
+        "text3": "To prepare for the meeting, we kindly ask you to answer a few additional questions in the registration form available via the link below.",
+        "button": "Browse our catalogue",
+        "imageAlt": "House plan"
     }
 
 }

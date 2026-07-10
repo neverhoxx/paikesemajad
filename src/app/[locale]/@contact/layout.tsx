@@ -2,20 +2,20 @@
 
 import { usePathname } from "next/navigation";
 
-interface AuthLayoutProps {
+export default function ContactLayout({
+    children,
+}: {
     children: React.ReactNode;
-}
-
-export default function AuthLayout({ children }: AuthLayoutProps) {
+}) {
     const pathname = usePathname();
-    const shouldShowDialog = pathname === "/en/contact" || pathname === "/et/kontakt";
 
-    if (!shouldShowDialog) return null;
+    const showDialog = [
+        "/et/kontakt",
+        "/en/contact",
+        "/fi/yhteystiedot",
+    ].includes(pathname);
 
-    return (
-        <>
-            {children}
-        </>
+    if (!showDialog) return null;
 
-    );
+    return children;
 }

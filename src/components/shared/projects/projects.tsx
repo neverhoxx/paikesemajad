@@ -17,7 +17,7 @@ export default function ProjectListBlock() {
 
     const locale = useLocale();
 
-    const availableLocales = ['et', 'en'];
+    const availableLocales = ['et', 'en', 'fi'];
     const currentLocale = availableLocales.includes(locale) ? locale : 'et';
 
     return (

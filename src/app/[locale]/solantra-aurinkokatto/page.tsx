@@ -3,15 +3,15 @@ import SolarRoofClient from "./client";
 
 export function generateMetadata(): Metadata {
   const baseUrl = "https://www.solantrahome.com";
-  const title = "Solantra Päikesekatus — katus, mis toodab elektrit";
+  const title = "Solantra Aurinkokatto — katto, joka tuottaa sähköä";
   const description =
-    "Solantra päikesekatus on integreeritud päikeseenergia katuselahendus Eesti kodudele. Ilmastikukindlad, kõrge tootlikkusega paneelid 12-aastase tootegarantiiga — energiatootmine, mis näeb välja nagu tavaline katus.";
+    "Solantra-aurinkokatto on integroitu aurinkoenergian kattoratkaisu virolaisiin koteihin. Säänkestävät, korkean hyötysuhteen paneelit 12 vuoden tuotetakuulla — energiantuotanto, joka näyttää tavalliselta katolta.";
 
   return {
     title,
     description,
     alternates: {
-      canonical: `${baseUrl}/et/solantra-paikesekatus`,
+      canonical: `${baseUrl}/fi/solantra-aurinkokatto`,
       languages: {
         et: `${baseUrl}/et/solantra-paikesekatus`,
         en: `${baseUrl}/en/solantra-solar-roof`,
@@ -22,9 +22,9 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title,
       description,
-      url: `${baseUrl}/et/solantra-paikesekatus`,
+      url: `${baseUrl}/fi/solantra-aurinkokatto`,
       siteName: "Solantra",
-      locale: "et_EE",
+      locale: "fi_FI",
       type: "website",
     },
   };
@@ -36,15 +36,15 @@ export default function Page() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Solantra Päikesekatus",
+    name: "Solantra Aurinkokatto",
     description:
-      "Integreeritud päikeseenergia katuselahendus, mis ühendab päikesepaneelid ja katusekattematerjali üheks ilmastikukindlaks tervikuks.",
+      "Integroitu aurinkoenergian kattoratkaisu, joka yhdistää aurinkopaneelit ja kattopinnoitteen yhdeksi säänkestäväksi kokonaisuudeksi.",
     brand: { "@type": "Brand", name: "Solantra" },
     warranty: {
       "@type": "WarrantyPromise",
       durationOfWarranty: { "@type": "QuantitativeValue", value: 12, unitCode: "ANN" },
     },
-    url: `${baseUrl}/et/solantra-paikesekatus`,
+    url: `${baseUrl}/fi/solantra-aurinkokatto`,
   };
 
   return (

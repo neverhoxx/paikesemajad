@@ -3,42 +3,44 @@
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
+type Locale = "en" | "et" | "fi";
+const locales: Locale[] = ["en", "et", "fi"];
+const labels: Record<Locale, string> = { et: "EST", en: "EN", fi: "FI" };
+
+function getLocaleFromPath(pathname: string): Locale {
+    const seg = pathname.split("/")[1];
+    return locales.includes(seg as Locale) ? (seg as Locale) : "et";
+}
+
 export default function LocaleSwitch() {
     const router = useRouter();
     const pathname = usePathname() || "/";
-    const [currentLocale, setCurrentLocale] = useState<"en" | "et">("et");
+    const [currentLocale, setCurrentLocale] = useState<Locale>("et");
 
     useEffect(() => {
-        if (pathname.startsWith("/en")) {
-            setCurrentLocale("en");
-        } else {
-            setCurrentLocale("et");
-        }
+        setCurrentLocale(getLocaleFromPath(pathname));
     }, [pathname]);
 
-    const toggleLocale = () => {
-        const nextLocale = currentLocale === "et" ? "en" : "et";
+    const cycleLocale = () => {
+        const currentIndex = locales.indexOf(currentLocale);
+        const nextLocale = locales[(currentIndex + 1) % locales.length];
 
         const segments = pathname.split("/").filter(Boolean);
-
-        if (segments[0] === "en" || segments[0] === "et") {
+        if (locales.includes(segments[0] as Locale)) {
             segments.shift();
         }
 
-        const newPath = `/${nextLocale}/${segments.join("/")}`;
-
-        router.push(newPath === `/${nextLocale}/` ? `/${nextLocale}` : newPath);
-
+        const newPath = `/${nextLocale}${segments.length ? `/${segments.join("/")}` : ""}`;
+        router.push(newPath);
         document.cookie = `locale=${nextLocale}; path=/; max-age=31536000`;
     };
 
-
     return (
         <button
-            onClick={toggleLocale}
+            onClick={cycleLocale}
             className="border-2 rounded-full px-3 py-1 text-white font-bold cursor-pointer"
         >
-            {currentLocale === "et" ? "EN" : "EST"}
+            {labels[currentLocale]}
         </button>
     );
 }

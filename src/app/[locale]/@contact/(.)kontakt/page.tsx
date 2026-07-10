@@ -1,9 +1,11 @@
 "use client";
 
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { useCallback, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-import ContactLayout from "../layout";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+
 import {
     Sheet,
     SheetContent,
@@ -13,60 +15,77 @@ import {
     SheetTitle,
 } from "@/components/ui/sheet";
 
-import { useRouter } from "next/navigation";
-import { useCallback, useEffect } from "react";
-
 export default function KontaktForm() {
     const router = useRouter();
-
 
     const handleClose = useCallback(() => {
         router.back();
     }, [router]);
 
     useEffect(() => {
-        const onKey = (e: KeyboardEvent) => {
-            if (e.key === "Escape") handleClose();
+        const onKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape") {
+                handleClose();
+            }
         };
-        window.addEventListener("keydown", onKey);
-        return () => window.removeEventListener("keydown", onKey);
+
+        window.addEventListener("keydown", onKeyDown);
+
+        return () => {
+            window.removeEventListener("keydown", onKeyDown);
+        };
     }, [handleClose]);
 
     return (
-        <ContactLayout>
-            <Sheet open onOpenChange={handleClose}>
+            <Sheet open onOpenChange={(open) => !open && handleClose()}>
                 <SheetContent
                     side="right"
-                    className="w-full sm:w-[40%] h-full"
+                    className="w-full sm:max-w-lg bg-white p-0 flex flex-col"
                 >
-                    <SheetHeader>
-                        <SheetTitle className="text-center text-blue-600 text-2xl">
+                    <SheetHeader className="px-6 pt-8 pb-4 border-b">
+                        <SheetTitle className="text-2xl text-center text-blue-600">
                             Võta meiega ühendust
                         </SheetTitle>
+
                         <SheetDescription className="text-center">
-                            Võta ühendust ja arutame võimalusi täpselt Sinu vajaduste järgi.
+                            Võta ühendust ja arutame võimalusi täpselt Sinu
+                            vajaduste järgi.
                         </SheetDescription>
                     </SheetHeader>
-                    <form className="h-full flex flex-col justify-end" action="">
-                        <div className="px-5">
 
-                            <Input type="text" placeholder="Nimi" className="p-2 mb-3" />
-                            <Input type="email" placeholder="E-post" className="p-2 mb-3" />
-                            <Input type="tel" placeholder="Telefoni number" className="p-2 mb-3" />
+                    <form className="flex-1 flex flex-col">
+                        <div className="flex-1 overflow-y-auto px-6 py-6 space-y-4">
+                            <Input
+                                type="text"
+                                placeholder="Nimi"
+                            />
 
-                            <Textarea className="w-full border p-2" placeholder="Sõnum" />
+                            <Input
+                                type="email"
+                                placeholder="E-post"
+                            />
 
+                            <Input
+                                type="tel"
+                                placeholder="Telefoni number"
+                            />
+
+                            <Textarea
+                                placeholder="Sõnum"
+                                className="min-h-[160px] resize-none"
+                            />
                         </div>
-                        <SheetFooter className="flex justify-between">
-                            <button className="px-4 py-2 bg-blue-600 text-white rounded-xl cursor-pointer">
+
+                        <SheetFooter className="border-t p-6">
+                            <button
+                                type="submit"
+                                className="w-full rounded-xl bg-blue-600 py-3 font-medium text-white transition hover:bg-blue-700"
+                            >
                                 Saada
                             </button>
                         </SheetFooter>
                     </form>
                 </SheetContent>
             </Sheet>
-        </ContactLayout>
-
-
     );
 }

@@ -185,5 +185,20 @@
     "meta": {
         "title": "Solantra | Päikesepaneelid ja moodulmajad päikeseenergiaga",
         "description": "Solantra pakub päikesepaneele, päikesekatuseid ja moodulmaju integreeritud päikeseenergia lahendustega Eestis. Kvaliteetne paigaldus ja pikaajaline garantii."
+    },
+
+    "UnderConstruction": {
+        "eyebrow": "Peagi valmis",
+        "title": "See leht on veel ehitusjärgus",
+        "text": "Töötame selle nimel, et see osa Solantra kodulehest oleks peagi valmis. Vaata vahepeal meie olemasolevaid lahendusi.",
+        "back": "Tagasi kodulehele"
+    },
+    "Planning": {
+        "title": "Kuidas alustada oma kodu planeerimisega?",
+        "text1": "Küsimusi on kindlasti palju, nii krundi asetuse, hoone ruumiplaneeringu, ehituse eelarve kui ka töö etappide kohta.",
+        "text2": "Kutsume teid külla, et saaksime selles osas rohkem abiks olla!",
+        "text3": "Kohtumise paremaks ettevalmistamiseks palume võimalusel vastata registreerumisvormil ka mõnele täpsustavale küsimusele, mis avanevad klikkides allolevale lingile.",
+        "button": "Vali meie kataloogist",
+        "imageAlt": "Kodu plaan"
     }
 }

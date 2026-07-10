@@ -11,6 +11,20 @@ import logo from "@/images/solantra-logo.png";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
+type Locale = "en" | "et" | "fi";
+const locales: Locale[] = ["en", "et", "fi"];
+
+function getLocaleFromPath(pathname: string): Locale {
+    const seg = pathname.split("/")[1];
+    return locales.includes(seg as Locale) ? (seg as Locale) : "et";
+}
+
+const solarRoofSlug: Record<Locale, string> = {
+    et: "solantra-paikesekatus",
+    en: "solantra-solar-roof",
+    fi: "solantra-aurinkokatto",
+};
+
 export default function Header() {
     const t = useTranslations("Header");
     const nav_t = useTranslations("Navigations");
@@ -18,8 +32,7 @@ export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const lang: "et" | "en" = pathname.startsWith("/en") ? "en" : "et";
-    const [currentLocale, setCurrentLocale] = useState<"en" | "et">(lang);
+    const [currentLocale, setCurrentLocale] = useState<Locale>(getLocaleFromPath(pathname));
     const router = useRouter();
 
     useEffect(() => {
@@ -31,29 +44,27 @@ export default function Header() {
     }, []);
 
     useEffect(() => {
-        if (pathname.startsWith("/en")) {
-            setCurrentLocale("en");
-        } else {
-            setCurrentLocale("et");
-        }
+        setCurrentLocale(getLocaleFromPath(pathname));
     }, [pathname]);
 
-    const toggleLocale = () => {
-        const nextLocale = currentLocale === "et" ? "en" : "et";
-        const segments = pathname.split("/").filter(Boolean);
+    const cycleLocale = () => {
+        const currentIndex = locales.indexOf(currentLocale);
+        const nextLocale = locales[(currentIndex + 1) % locales.length];
 
-        if (segments[0] === "en" || segments[0] === "et") {
+        const segments = pathname.split("/").filter(Boolean);
+        if (locales.includes(segments[0] as Locale)) {
             segments.shift();
         }
 
-        const newPath = `/${nextLocale}/${segments.join("/")}`;
-        router.push(newPath === `/${nextLocale}/` ? `/${nextLocale}` : newPath);
-
+        const newPath = `/${nextLocale}${segments.length ? `/${segments.join("/")}` : ""}`;
+        router.push(newPath);
         document.cookie = `locale=${nextLocale}; path=/; max-age=31536000`;
     };
 
+    const localeLabels: Record<Locale, string> = { et: "EST", en: "EN", fi: "FI" };
+
     const navLinks = [
-        { key: "solantra", path: nav_t("solantra"), label: t("headerNav.solantra") },
+        { key: "solantra", path: solarRoofSlug[currentLocale], label: t("headerNav.solantra") },
         { key: "katalog", path: nav_t("projectss"), label: t("headerNav.katalog") },
         { key: "referentsid", path: nav_t("referentsid"), label: t("headerNav.referentsid") },
         { key: "ehitusinfo", path: nav_t("ehitusinfo"), label: t("headerNav.ehitusinfo") },
@@ -110,12 +121,12 @@ export default function Header() {
 
                         <button
                             onClick={() => {
-                                toggleLocale();
+                                cycleLocale();
                                 setMenuOpen(false);
                             }}
                             className="border-2 border-black rounded-full px-3 py-1 transition-colors duration-300 font-bold cursor-pointer text-black"
                         >
-                            {currentLocale === "et" ? "EN" : "EST"}
+                            {localeLabels[currentLocale]}
                         </button>
                     </nav>
                 </div>

@@ -1,0 +1,206 @@
+{
+    "Header": {
+        "languages": {
+            "en": "Englanti",
+            "ee": "Viro",
+            "fi": "Suomi"
+        },
+        "headerNav": {
+            "katalog": "Projektikatalogi",
+            "referentsid": "Referenssit",
+            "ehitusinfo": "Rakennusinfo",
+            "meist": "Meistä",
+            "kontakt": "Yhteystiedot",
+            "solantra": "Solantra aurinkokatto"
+        }
+    },
+    "Stats": {
+        "years": "VUOTTA KOKEMUSTA",
+        "complete": "TOTEUTETTUA MODUULITALOA",
+        "workers": "AMMATTITAITOISTA TYÖNTEKIJÄÄ"
+    },
+    "Main-main": {
+        "choose": "Valitse unelmiesi koti",
+        "choose-text": "Kodin rakentaminen ei todellakaan ole helppo päätös. Miksi tyytyä vähempään kuin täydellisyyteen? Meidän kanssamme sinun ei tarvitse. Jos et löydä valmiiden projektien joukosta itsellesi sopivaa ratkaisua, tutustu myös design-nurkkaukseemme, johon olemme koonneet maailman kauneimpia taloja. Löydä se oikea, ja me autamme sen rakentamisessa.",
+        "Buttons": {
+            "projects": "Meidän projektimme",
+            "complete-works": "Valmiit työt",
+            "kusi-pakkumist": "Pyydä tarjous"
+        },
+        "Hero": {
+            "title": "Tutustu Solantra SolarHomeen",
+            "text": "Solantra SolarHome — täydellinen ratkaisu, joka muuttaa kotisi tyylikkääksi ja tehokkaaksi energialähteeksi. Säästä laskuissa, tienaa tuloja BIPV-ratkaisulla ja nosta kotisi arvoa — kaikki tyylikkäällä ja saumattomalla designilla. Tuota energiaa, ansaitse rahaa ja auta ympäristöä kotisi avulla.",
+            "uuri": "Lue lisää"
+        }
+    },
+    "Projects": {
+        "area": "Pinta-ala (ulkomitat)",
+        "dimensions": "Mitat (ulkomitat)",
+        "height": "Korkeus (ulkomitat)",
+        "rooms": "Huoneet",
+        "loft": "Ullakko",
+        "documentation": "Tekninen dokumentaatio",
+        "bathroom": "Kylpyhuone",
+        "bathroom-inc": "kylpyhuone",
+        "electricity": "Sähköasennus",
+        "structure": "Kantava rakenne",
+        "construction": "Paneelirakenne",
+        "warranty": "Takuuaika",
+        "plan": "Talon pohjapiirros",
+        "included": "Sisältyy pakettiin",
+        "rooms-amount": "huonetta",
+        "years": "vuotta",
+        "price": "Hinta",
+        "drawings": "Katso piirustukset",
+        "metal-frame": "Metallirunko (CE)",
+        "wooden-panels": "Puupaneelit (C24)",
+        "view": "Katso malli",
+        "katalogis": "Projektit katalogissa",
+        "first-project": {
+            "name": "Kesämökki ullakolla 35 m²",
+            "text": "Tämä moderni ullakollinen kesämökki ei jätä ketään kylmäksi ja tarjoaa omistajilleen avaruuden ja kodikkuuden tunteen. Lattiasta kattoon ulottuvat ikkunat takaavat runsaasti luonnonvaloa."
+        },
+        "living": "Olohuone",
+        "second-project": {
+            "name": "Asuintalo 72 m²",
+            "text": "Yksi taloistamme – yksinkertainen mutta silti esteettisesti kiinnostava ja moderni. Vaalea skandinaavinen tyyli yhdistettynä erinomaiseen pohjaratkaisuun: 2 erillistä makuuhuonetta, ullakkokerros, täysin varusteltu kylpyhuone ja avara olohuone."
+        },
+        "third-project": {
+            "name": "Asuintalo 120 m²",
+            "text": "Erittäin kaunis asuintalo, jossa on 3 makuuhuonetta, työhuone, avara keittiöön yhdistetty olohuone sekä täysin varusteltu kylpyhuone. Projekti on erityisen houkutteleva käytännöllisen pohjaratkaisunsa ansiosta ja sopii hyvin lapsiperheille!"
+        },
+        "fourth-project": {
+            "name": "Asuintalo 76 m²",
+            "text": "Tämä moderni ja toimiva 76 m² asuintalo on ihanteellinen valinta 3–4 hengen perheelle. 3 makuuhuonetta takaavat mukavuuden ja yksityisyyden kaikille perheenjäsenille. Moderni studio-olohuone, joka on yhdistetty keittiöön, sopii täydellisesti yhteisiin rentoutumishetkiin. Suuret ikkunat antavat talolle paitsi tyylikkään ulkonäön myös runsaasti päivänvaloa, mikä tekee tilasta visuaalisesti avarammalta ja valoisammalta. Erinomainen valinta niille, jotka etsivät modernia, kompaktia ja toimivaa kotia."
+        },
+        "fifth-project": {
+            "name": "Lumi-talo 138 m²",
+            "text": "Lumi-talo on kompakti, valoisa kaksikerroksinen koti, joka yhdistää älykkään tilaratkaisun, kodikkaan tunnelman ja joustavat mahdollisuudet."
+        },
+        "sixth-project": {
+            "name": "Gerda-talo 184-241 m²",
+            "text": "Gerda-talo sopii perheille, jotka arvostavat käytännöllistä tilaratkaisua ja haluavat avaran, valoisan kodin."
+        },
+        "seventh-project": {
+            "name": "Miia-talo 115 m²",
+            "text": "Miia on pohjoismaisella designilla varustettu, kodikas kaksikerroksinen talo, joka sopii ihanteellisesti sekä kaupunkiin että luonnon keskelle."
+        },
+        "projektide-katalog": "Projektikatalogimme",
+        "vaata": "Katso projektimme",
+        "meie-projektid": "Meidän projektimme",
+        "solantra-roof-included": "Solantra-katto - sisältyy",
+        "integrated": "Integroitu vedenpitävä järjestelmä, joka on mukautettu katon geometriaan",
+        "fire": "Täyttää palo- ja pikakatkaisuluokan vaatimukset (UL/EN alueellinen)",
+        "wind": "Pohjoismaiseen ilmastoon sopivat tuuli- ja lumikuormalaskelmat",
+        "battery": "Akku- ja sähköauton latausvaihtoehdot saatavilla",
+        "technical-specification": "Tekninen kuvaus",
+        "standard-specification": "Moduulin vakiospesifikaatio",
+        "näita": "Näytä lisää"
+    },
+    "Contact": {
+        "title": "Oletko valmis aloittamaan projektisi?",
+        "text": "Ota yhteyttä, niin keskustelemme mahdollisuuksista juuri sinun tarpeidesi mukaan.",
+        "btn": "Ota yhteyttä",
+        "info": "Yhteystiedot"
+    },
+    "Navigations": {
+        "projectss": "projektit",
+        "contact": "yhteystiedot",
+        "referentsid": "referenssit",
+        "ehitusinfo": "rakennusinfo",
+        "meist": "meista",
+        "solantra": "solantra-aurinkokatto"
+    },
+    "Project-details": {},
+    "Ehitusinfo": {
+        "title": "Rakennusinfo",
+        "text": "Täältä löydät tarkempaa tietoa siitä, kuinka etenemme ideastasi lopputulokseen.",
+        "uuri": "Lue lisää",
+        "second-title": "Miten esivalmisteltu teknologia toimii?",
+        "first-step-title": "Suunnittelu ja insinöörityö",
+        "second-step-title": "Tehdasrakentaminen",
+        "third-step-title": "Kokoonpano paikan päällä",
+        "first-step-text": "Räätälöidyt pohjaratkaisut, jotka on suunniteltu kuljetusta ja työmaakokoonpanoa varten.",
+        "second-step-text": "Valmistus valvotussa ympäristössä: tarkkuus, laatu, nopeus.",
+        "third-step-text": "Nopea kokoonpano paikan päällä ja ammattitaitoinen aurinkosähköjärjestelmän käyttöönotto."
+    },
+    "Solantraroof": {
+        "features": {
+            "title1": "Tyylikäs design",
+            "title2": "Tuottavuus",
+            "title3": "Säänkestävä ja turvallinen",
+            "title4": "Pitkäaikainen takuu",
+            "text1": "Jokainen aurinkopaneeli on asennettu suoraan katon ruoteisiin — katto näyttää perinteiseltä katolta, mutta läheltä katsottuna se tekee vaikutuksen modernilla ja ylellisellä olemuksellaan.",
+            "text2": "Moduulit muuttavat auringonvalon sähköenergiaksi myös hajavalossa ja pilvisellä säällä, ei ainoastaan kirkkaalla ja aurinkoisella säällä.",
+            "text3": "Solantra-aurinkokatto on erittäin säänkestävä ja turvallinen. Se on suunniteltu kestämään lumikuormaa, tuulenpuuskia ja kylmiä talvia.",
+            "text4": "Katto ja paneelit kuuluvat saman takuun alle, joten sinun ei tarvitse huolehtia erikseen kahdesta eri järjestelmästä."
+        },
+        "steps": {
+            "title1": "Katon tarkastus",
+            "title2": "Tarjous",
+            "title3": "Asennus",
+            "title4": "Käyttöönotto",
+            "text1": "Tarvittaessa käymme paikan päällä, mittaamme katon kaltevuuden ja suunnan sekä arvioimme, kuinka paljon energiaa se pystyisi tuottamaan.",
+            "text2": "Laadimme sinulle henkilökohtaisen tarjouksen — jokainen katto on muodoltaan ja varjostukseltaan erilainen, joten myös ratkaisu on yksilöllinen.",
+            "text3": "Tiimimme asentaa katon sovittujen ehtojen mukaisesti. Tässä yhteydessä otamme vastuun ja velvoitteen takuusta.",
+            "text4": "Järjestelmä liitetään joko off-grid-ratkaisuna tai verkkoon ja säädetään, minkä jälkeen kattosi alkaa heti tuottaa energiaa ja tuoda sinulle tuloja."
+        },
+        "docs": {
+            "title1": "Tuotekuvaus",
+            "title2": "Asennusohje",
+            "title3": "Takuuehdot",
+            "text1": "Solantra-aurinkokaton tekninen yleiskatsaus ja komponentit.",
+            "text2": "Vaiheittainen ohje asennustiimille.",
+            "text3": "Tuote- ja tuottavuustakuun tarkat ehdot."
+        },
+        "heroTitle": "Katto, joka tuottaa sähköä - kenenkään huomaamatta",
+        "heroText": "Solantra-aurinkokatto — aurinkopaneeleista koostuva kattoratkaisu, joka on rakennuksellesi suunniteltu energiaa tuottava kokonaisjärjestelmä (ei erikseen asennettavia paneeleita). Se tekee kodistasi tyylikkään ja nykyaikaisen samalla hyödyntäen aurinkoenergiaa jatkuvasti kallistuvan sähkön kulujen vähentämiseksi. Tämä on katto, joka on kustannustehokas, älykäs ja tyylikäs niin läheltä kuin kaukaakin katsottuna.",
+        "askPrice": "Pyydä hinta-arvio",
+        "howItWorks": "Miten se toimii",
+        "years": "vuotta",
+        "warranty": "tuotetakuu",
+        "module": "moduulin teho",
+        "docsTitle": "Asiakirjat",
+        "nahtavat": "näkyvää paneelia katolla",
+        "whatDo": "Mikä tekee Solantra-aurinkokatosta erityisen",
+        "nelisammu": "Neljä askelta nykyisestä katostasi energiaa tuottavaan kattoon.",
+        "tehnilised": "Tekniset tiedot",
+        "näidisandmed": "Esimerkkiarvot - tarkat luvut vahvistetaan valitun moduulin ja katon konfiguraation perusteella.",
+        "tootekirjeldused": "Tuotekuvaukset, asennusohjeet ja takuuehdot yhdestä paikasta.",
+        "ctaTitle": "Oletko valmis muuttamaan kattosi tyylikkääksi energialähteeksi?",
+        "ctaText": "Käymme läpi kattosi mahdollisuudet ja laadimme sinulle sopivan tarjouksen.",
+        "ctaBtn": "Ota yhteyttä",
+        "download": "Lataa",
+        "productWarranty": "Tuote",
+        "installationWarranty": "Asennustakuu",
+        "and": "- ja"
+    },
+    "footer": {
+        "oigused": "Kaikki oikeudet pidätetään.",
+        "privacy": "Tietosuojakäytäntö",
+        "terms": "Käyttöehdot",
+        "text": "Tyylikkäitä ja tehokkaita aurinkotaloja kodiksesi.",
+        "partners": "Kumppanit"
+    },
+
+    "meta": {
+        "title": "Solantra | Aurinkopaneelit ja aurinkoenergiamoduulikodit",
+        "description": "Solantra tarjoaa aurinkopaneeleita, aurinkokattoja ja integroidulla aurinkoenergialla varustettuja moduulikoteja Virossa. Laadukas asennus ja pitkäaikainen takuu."
+    },
+
+    "UnderConstruction": {
+        "eyebrow": "Tulossa pian",
+        "title": "Tämä sivu on vielä rakenteilla",
+        "text": "Työstämme parhaillaan tätä Solantran sivuston osaa. Sillä välin voit tutustua jo valmiisiin ratkaisuihimme.",
+        "back": "Takaisin etusivulle"
+    },
+
+    "Planning": {
+        "title": "Miten aloittaa oman kodin suunnittelu?",
+        "text1": "Suunnittelussa herää varmasti paljon kysymyksiä tontin sijainnista, pohjaratkaisusta, rakennusbudjetista ja projektin eri vaiheista.",
+        "text2": "Tervetuloa käymään – autamme mielellämme suunnittelussa.",
+        "text3": "Jotta tapaamiseen voidaan valmistautua mahdollisimman hyvin, pyydämme sinua vastaamaan muutamaan lisäkysymykseen ilmoittautumislomakkeella alla olevan linkin kautta.",
+        "button": "Tutustu katalogiimme",
+        "imageAlt": "Talon pohjapiirros"
+    }
+}
